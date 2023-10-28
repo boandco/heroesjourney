@@ -7,8 +7,8 @@ media_folder: "assets/images/uploads"
 public_folder: "assets/images/uploads"
 
 #Config
-site_url: https://journey10x.com
-display_url: https://journey10x.com
+site_url: https://heroesjourney.com
+display_url: https://heroesjourney.com
 logo_url: https://boandco.studio/images/logo.svg
 
 #Content

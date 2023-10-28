@@ -1,7 +1,7 @@
 {
-  "name": "journey10x",
+  "name": "heroesjourney",
   "version": "1.0.0",
-  "description": "Website for Journey 10X",
+  "description": "Website for Heroes Journey",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boandco/journey10x.git"
+    "url": "git+https://github.com/boandco/heroesjourney.git"
   },
   "author": "Bo & Co Studio (Connell McCarthy)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/boandco/journey10x/issues"
+    "url": "https://github.com/boandco/heroesjourney/issues"
   },
-  "homepage": "https://github.com/boandco/journey10x#readme"
+  "homepage": "https://github.com/boandco/heroesjourney#readme"
 }
