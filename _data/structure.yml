@@ -6,8 +6,8 @@ page_sections:
     label: About us
   - template: block-clients
     label: Clients
-  - template: block-work
-    label: Work
+  - template: block-stories
+    label: Stories
   - template: block-values
     label: Values
   - template: block-services

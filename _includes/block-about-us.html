@@ -1,11 +1,12 @@
 {% assign section = site.data.blocks.block-about-us %}
-<div id="about" class="section" data-scroll-section>
+<div id="about" class="section no-bg" data-scroll-section>
   <div class="section__title">
     <h2 class="letter-animate" id="{{ section.template }}-h2" data-scroll data-scroll-call="text-animate+{{ section.template }}-h2">{{ section.section_title }}</h2>
   </div>
   <div class="section__content offset__left">
     <div class="section__content__container">
       <p class="heading animate__fadeIn" id="{{ section.template }}-heading" data-scroll data-scroll-call="animate-in+{{ section.template }}-heading">{{ section.heading }}</p>
+      <p class="desc animate__fadeIn" id="{{ section.template }}--description" data-scroll data-scroll-call="animate-in+{{ section.template }}--description">{{ section.description }}</p>
     </div>
   </div>
 </div>

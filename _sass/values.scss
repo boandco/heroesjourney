@@ -28,7 +28,7 @@
       text-align: right;
       width: 50%;
       margin: 0;
-      background: linear-gradient(20deg, $color-orange 40%, $color-indigo 60%, $color-teal 80%);
+      background: linear-gradient(20deg, $color-orange 40%, $color-indigo 60%, $color-turquoise 80%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -36,11 +36,11 @@
     .text-fade {
       width: 50%;
       height: 100vh;
-      background: linear-gradient(360deg, $color-black 15%, rgba(0, 0, 0, 0) 50%, $color-black 85%);
+      background: linear-gradient(360deg, $color-white 15%, rgba(0, 0, 0, 0) 50%, $color-white 85%);
       z-index: 1;
 
       @media screen and (max-width: $break-mobile) {
-        background: linear-gradient(360deg, $color-black 30%, rgba(0, 0, 0, 0) 50%, $color-black 70%);
+        background: linear-gradient(360deg, $color-white 30%, rgba(0, 0, 0, 0) 50%, $color-white 70%);
       }
     }
   }

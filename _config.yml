@@ -18,16 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Journey 10X
-email: info@journey10x.com
+title: Heroes Journey
+email: info@heroesjourney.com
 description: >- # this means to ignore newlines until "baseurl:"
-  journey 10x helps brands empower, uplift and inspire, through content, events, brand development, and social media, using the power of storytelling, celebrities, and innovative campaigns that rise above the noise
+  Empowering Students Around the World to Find Their Passions and Their Voices
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://journey10x.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-netlify_id: ad211fd0-4814-4996-91b0-39fdc4d08718
+url: "https://heroesjourney.com" # the base hostname & protocol for your site, e.g. http://example.com
+netlify_id: c7867ad4-5584-4d38-b375-534dfdde687d
 
 # Build settings
 
@@ -35,7 +33,7 @@ plugins:
 - jekyll-menus
 
 collections:
-  - projects
+  - stories
   - team
 
 sass:

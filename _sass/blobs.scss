@@ -1,0 +1,38 @@
+.blob {
+  position: absolute;
+  filter: blur(80px);
+  opacity: 0.75;
+
+  &#blob_001 {
+    top: 2vh;
+    right: 2vw;
+    height: 18vh;
+    width: 40vw;
+    border-radius: 100%;
+  }
+  &#blob_002 {
+    top: calc(50% - calc(35vh / 2));
+    left: 0;
+    height: 35vh;
+    width: 35vw;
+    border-radius: 75%;
+  }
+  &#blob_003 {
+    bottom: 0;
+    right: 0;
+    height: 35vh;
+    width: 35vw;
+    border-radius: 100%;
+    transform: rotate(-45deg);
+  }
+
+  &.blue {
+    background: $gradient-blue;
+  }
+  &.teal {
+    background: $gradient-teal;
+  }
+  &.orange {
+    background: $gradient-orange;
+  }
+}

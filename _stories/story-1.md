@@ -1,5 +1,6 @@
 ---
-  title: "State Farm - “Good Neighbor Month: Karl-Anthony Towns”"
+  title: "highlighted talk"
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut pretium ligula. Sed non mauris vitae elit malesuada faucibus eu sed ligula."
   media: Social Media
   credit_title: Producer
   credit_name: Eric Alan Donaldson

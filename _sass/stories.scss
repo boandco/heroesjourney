@@ -39,7 +39,7 @@
     }
   }
 }
-.work {
+.stories {
   &__projects {
     display: flex;
     flex-direction: row;
@@ -78,12 +78,12 @@
       }
       &:nth-of-type(2) {
         &:after {
-          background: linear-gradient(90deg, $color-indigo -10vw, $color-orange 10vw, $color-teal 100vw);
+          background: linear-gradient(90deg, $color-indigo -10vw, $color-orange 10vw, $color-turquoise 100vw);
         }
       }
       &:nth-of-type(3) {
         &:after {
-          background: linear-gradient(90deg, $color-orange -50vw, $color-teal 50vw);
+          background: linear-gradient(90deg, $color-orange -50vw, $color-turquoise 50vw);
         }
       }
 

@@ -1,7 +1,19 @@
 {% assign section = site.data.blocks.block-hero %}
 <div id="home" class="section hero" data-scroll-section>
   <div class="content" data-scroll>
-    <h1 id="hero-h1" class="text-animate" data-scroll data-scroll-call="text-animate+hero-h1" data-scroll-speed="2">{{ section.headline }}</h1>
+    {% assign headline = section.headline | split: ' ' %}
+    <h1 id="hero-h1" style="--headline-count: {{ headline | size }}">
+      {% for line in headline %}
+        <span class="h1-line" data-scroll data-scroll-speed="2">
+          <span id="hero-h1-{{ forloop.index }}"
+            class="letter-animate"
+            data-scroll-call="text-animate+hero-h1-{{ forloop.index }}"
+            data-scroll>
+            {{ line }}
+          </span>
+        </span>
+      {% endfor %}
+    </h1>
     <a href="#about" class="btn btn__circle btn__dark btn__scale local">
       <span class="visually-hidden">Scroll to content</span>
       <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -10,20 +22,10 @@
       </svg>
     </a>
   </div>
-  <!-- <div class="blob mobile-hide" id="hero_blob"></div>
-  <div class="blob background mobile-hide" id="hero_blob_bg"></div> -->
-  <video class="background" id="hero_video" autoplay loop muted playsinline nocontrols preload="auto">
-    <source src="/assets/images/J10X_HERO.mp4" type="video/mp4">
-    <source src="/assets/images/J10X_HERO.webm" type="video/webm">
-  </video>
-  <script>
-      let blob = document.getElementById('hero_blob');
-      let blob_bg = document.getElementById('hero_blob_bg');
-      if (blob && blob_bg) {
-        document.querySelector('.hero').addEventListener('mousemove', (e) => {
-          blob.style.transform = `translate(${ e.clientX / 2 }px, ${ e.clientY / 2 }px)`;
-          blob_bg.style.transform = `translate(${ e.clientX / 4 }px, ${ e.clientY / 4 }px)`;
-        });
-      }
-  </script>
+  <div id="blob_001" class="blob blue"></div>
+  <div id="blob_002" class="blob teal"></div>
+  <div id="blob_003" class="blob orange"></div>
+  <div class="hero-logo">
+    {% include assets/gradient-logo.html %}
+  </div>
 </div>

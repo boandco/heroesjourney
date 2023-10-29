@@ -3,8 +3,23 @@ $color-white: #FFF;
 $color-off-black: #191919;
 $color-off-white: #D9D9D9;
 
+$color-light-blue: #E8F5FF;
+
 //Gradient colors
-$color-orange: #F8AC78;
-$color-teal: #98E0FF;
-$color-indigo: #8F80FF;
-$color-sky: #C2C5FF;
+$color-pink: #FD99A6;
+$color-peach: #FFC399;
+$color-orange: #FDD79B;
+$color-lime: #E6E6A6;
+$color-mint: #ABF4C0;
+$color-turquoise: #7FEED9;
+$color-turquoise-blue: #67D1F3;
+$color-blue-crystal: #5DB9FF;
+$color-blue-butterfly: #5FA7FF;
+$color-blue-periwinkle: #729FFE;
+$color-indigo: #9DA5FA;
+$color-violet: #CAA2DB;
+
+//Gradients
+$gradient-blue: conic-gradient(from 196deg at 62.19% 44.91%, $color-blue-periwinkle 0deg, $color-indigo 183.75000715255737deg, $color-peach 360deg);
+$gradient-teal: conic-gradient(from 196deg at 62.19% 44.91%, $color-turquoise 0deg, $color-turquoise-blue 183.75000715255737deg, $color-lime 360deg);
+$gradient-orange: conic-gradient(from 196deg at 62.19% 44.91%, $color-peach 0deg, $color-pink 183.75000715255737deg, $color-orange 360deg);

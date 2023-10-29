@@ -41,7 +41,9 @@
       let rotation = 0;
       scroll.on('scroll', (e) => {
         rotation += e.speed / 6;
-        document.querySelector('.rotate_on_scroll').style.transform = `rotate(${ rotation }deg)`;
+        document.querySelectorAll('.rotate_on_scroll').forEach((x) => {
+          x.style.transform = `rotate(${ rotation }deg)`;
+        });
       });
     }
     let windowOffset = 120;

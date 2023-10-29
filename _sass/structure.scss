@@ -65,14 +65,14 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: $color-black;
-  color: $color-white;
+  background: $color-white;
+  color: $color-black;
   font-family: $font-family;
 }
 .gradient {
   --gradient-color-1: #{$color-orange};
-  --gradient-color-2: #{$color-teal};
-  --gradient-color-4: #{$color-sky};
+  --gradient-color-2: #{$color-turquoise};
+  --gradient-color-4: #{$color-blue-crystal};
   pointer-events: none;
   
   &.background {
@@ -107,7 +107,7 @@ body {
 .spacer {
   height: 100vh;
   width: 100%;
-  background: $color-black;
+  background: $color-white;
 }
 a {
   color: inherit;
@@ -116,7 +116,10 @@ a {
 .section {
   padding: 10em $gutter;
   position: relative;
-  background: $color-black;
+
+  &:not(.no-bg) {
+    background: $color-white;
+  }
 
   @media screen and (max-width: $break-mobile) {
     padding: 5em ($gutter / 2);
@@ -125,7 +128,7 @@ a {
   &__title {
     text-transform: uppercase;
     margin: 2em 0;
-    border-bottom: 1px solid darken($color-white, 80);
+    border-bottom: 1px solid $color-black;
     h2 {
       font-size: 1em;
       font-weight: 400;
@@ -163,7 +166,7 @@ a {
     p {
       width: 100%;
       &.heading {
-        font-size: clamp(1.8em, 3vw, 3em);
+        font-size: clamp(1.8em, 5vw, 5em);
         font-weight: 500;
       }
       &.description {
@@ -177,7 +180,7 @@ a {
   list-style: none;
   padding: 0;
   width: 50%;
-  border-top: 1px solid darken($color-white, 80);
+  border-top: 1px solid $color-black;
 
   &.large {
     width: 75%;
@@ -192,7 +195,7 @@ a {
 
   $padding: 36px;
   &__item {
-    border-bottom: 1px solid darken($color-white, 80);
+    border-bottom: 1px solid $color-black;
     .title, button {
       display: flex;
       justify-content: space-between;
@@ -200,7 +203,7 @@ a {
       background: transparent;
       font-size: 2em;
       width: 100%;
-      color: $color-white;
+      color: $color-black;
       font-family: $font-family;
       font-weight: 500;
       padding: 1.4em 0 0.3em;
@@ -226,6 +229,10 @@ a {
       svg {
         transition: 0.4s ease;
         opacity: 0;
+
+        path {
+          stroke: $color-black;
+        }
 
         @media screen and (max-width: $break-mobile) {
           opacity: 1;
@@ -260,7 +267,7 @@ a {
       opacity: 0;
       transition: 0.6s ease;
       padding: 0 $padding 1.4em;
-      color: #AAA;
+      color: $color-black;
       letter-spacing: 0.02em;
 
       @media screen and (max-width: $break-mobile) {
@@ -318,10 +325,12 @@ a {
   }
 }
 .divider {
+  &.blue {
+    background-color: $color-light-blue;
+  }
   padding: 10em;
   h2 {
     font-size: clamp(1.8em, 5vw, 6em);
-    color: $color-black;
     max-width: 70%;
   }
   h2, p {
@@ -341,7 +350,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background: $color-black;
+  background: $color-light-blue;
   display: flex;
   justify-content: center;
   align-items: center;

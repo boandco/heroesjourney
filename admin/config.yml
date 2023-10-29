@@ -45,18 +45,18 @@ collections:
             fields:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Logo", name: "image", choose_url: false, widget: "image"}
-      - label: "Work"
-        name: "block-work"
-        file: "_data/blocks/block-work.yml"
+      - label: "Stories"
+        name: "block-stories"
+        file: "_data/blocks/block-stories.yml"
         fields:
           - {label: "Template", name: "template", widget: "hidden"}
           - {label: "Section Title", name: "section_title", widget: "string"}
           - {label: "Description", name: "description",  widget: "text"}
-          - label: "Featured work"
-            name: "selected_work"
-            hint: "To edit projects navigate to the [Projects](/admin/#/collections/projects) tab."
+          - label: "Featured stories"
+            name: "selected_stories"
+            hint: "To edit stories navigate to the [Stories](/admin/#/collections/stories) tab."
             widget: "relation"
-            collection: "projects"
+            collection: "stories"
             search_fields: ["title"]
             value_field: "title"
             display_fields: ["title"]
