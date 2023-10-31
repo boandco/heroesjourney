@@ -1,4 +1,7 @@
 ---
 template: block-about-us
 section_title: About us
-heading: an empowerment curriculum that...
+heading: an empowerment\n curriculum that...
+descriptions:
+  - text: teaches students to discover their passion, and take a stand for it by offering a presentation to their community
+  - text: enables change makers to speak at schools to help elevate awareness about relevant issues students face

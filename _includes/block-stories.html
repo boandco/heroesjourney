@@ -9,7 +9,7 @@
       {% assign project = found_project[0] %}
       <a id="{{ project.title | slugify }}" data-scroll data-scroll-call="animate-in+{{ project.title | slugify }}" class="stories__projects__project project animate__fadeIn">
         <div class="thumbnail">
-          <button class="btn btn__circle btn__light btn__scale btn__text-animate video_modal_open" data-source="{{ project.source }}" data-poster="{{ project.image }}">
+          <button class="btn btn__circle btn__light btn__scale btn__text-animate story_modal_open" data-source="{{ project.source }}" data-poster="{{ project.image }}">
             <span class="animate__text" data-content="Play">
               <span class="animate__text__hide">Play</span>
             </span>
@@ -54,11 +54,11 @@
         });
       });
     }
-    document.querySelectorAll('.video_modal_open').forEach((proj) => {
+    document.querySelectorAll('.story_modal_open').forEach((proj) => {
       proj.addEventListener('click', () => {
-        let modal = document.querySelector('.video_modal');
-        let player = document.getElementById('video_modal_player');
-        let player_source = document.getElementById('video_modal_source');
+        let modal = document.querySelector('.story_modal');
+        let player = document.getElementById('story_modal_player');
+        let player_source = document.getElementById('story_modal_source');
         player.setAttribute('poster', proj.getAttribute('data-poster'));
         player_source.setAttribute('src', proj.getAttribute('data-source'));
         player_source.setAttribute('type', 'video/mp4');

@@ -1,0 +1,15 @@
+{% assign section = site.data.blocks.block-approach %}
+<div id="approach" class="section" data-scroll-section>
+  <div id="blob_004" class="blob teal" data-scroll data-scroll-speed="-2"></div>
+  <div class="section__content offset offset__right">
+    <div class="section__content__container">
+      <p class="letter-animate heading s-2" id="{{ section.template }}-h2" data-scroll data-scroll-call="text-animate+{{ section.template }}-h2">{{ section.section_title }}</p>
+      <p class="description animate__fadeIn" id="{{section.template}}-desc" data-scroll data-scroll-call="animate-in+{{section.template}}-desc">{{ section.description }}</p>
+    </div>
+    <div class="approach__images">
+      {% for image in section.images %}
+        <img src="{{ image.url }}">
+      {% endfor %}
+    </div>
+  </div>
+</div>

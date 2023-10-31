@@ -4,8 +4,10 @@ page_sections:
     label: Hero
   - template: block-about-us
     label: About us
-  - template: block-clients
-    label: Clients
+  - template: block-video
+    label: Video
+  - template: block-approach
+    label: Our approach
   - template: block-stories
     label: Stories
   - template: block-values

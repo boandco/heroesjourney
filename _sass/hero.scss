@@ -39,7 +39,7 @@
         width: 100%;
         border-bottom: 1px solid $color-black;
         display: block;
-        $h1-font-size: clamp(1em, calc(55vh / var(--headline-count)), 180px);
+        $h1-font-size: clamp(1em, calc(55vh / var(--headline-count)), 250px);
         font-size: $h1-font-size;
         height: $h1-font-size;
         margin: 0;
@@ -48,10 +48,10 @@
         //Add breakpoints for height & font size
 
         &:nth-of-type(2) {
-          padding-right: 2em;
+          padding-right: 25vw;
         }
         &:nth-of-type(3) {
-          padding-right: 1em;
+          padding-right: 10vw;
         }
       }
     }

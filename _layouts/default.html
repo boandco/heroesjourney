@@ -6,7 +6,7 @@
   <body>
     {% include loading.html %}
     <div id="cursor" class="cursor mobile-hide"></div>
-    <div class="video_modal">
+    <div class="story_modal">
       <button class="btn btn__circle btn__scale btn__light" id="video_close">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1L17.2635 17.2635" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
@@ -14,13 +14,13 @@
         </svg>          
         <span class="visually-hidden">Close modal</span>
       </button>
-      <video id="video_modal_player" controls>
-        <source id="video_modal_source">
+      <video id="story_modal_player" controls>
+        <source id="story_modal_source">
       </video>
       <script>
         document.getElementById('video_close').addEventListener('click', () => {
-          let modal = document.querySelector('.video_modal');
-          let player = document.getElementById('video_modal_player');
+          let modal = document.querySelector('.story_modal');
+          let player = document.getElementById('story_modal_player');
           player.pause();
           modal.classList.remove('active');
         });

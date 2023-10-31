@@ -2,6 +2,7 @@
   position: absolute;
   filter: blur(80px);
   opacity: 0.75;
+  z-index: -1;
 
   &#blob_001 {
     top: 2vh;
@@ -24,6 +25,14 @@
     width: 35vw;
     border-radius: 100%;
     transform: rotate(-45deg);
+  }
+  &#blob_004 {
+    height: 50vh;
+    width: 35vw;
+    border-radius: 100%;
+    top: -15vw;
+    right: -10vw;
+    transform: rotate(135deg);
   }
 
   &.blue {

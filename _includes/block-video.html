@@ -1,0 +1,30 @@
+{% assign section = site.data.blocks.block-video %}
+<div class="video_modal video">
+  {% assign video_id = section.video_source | split: 'vimeo.com/'%}
+  <iframe src="https://player.vimeo.com/video/{{ video_id[1] | remove: '?share=copy' }}?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <button class="btn btn__circle btn__light btn__scale video_modal_trigger">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L17.2635 17.2635" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M17.2634 1L0.999973 17.2635" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+    <span class="visually-hidden">Close modal</span>
+  </button>
+</div>
+<div id="video" class="section video full-width no-bg" data-scroll-section>
+  <div class="thumbnail">
+    <button class="btn btn__circle btn__light btn__scale btn__text-animate video_modal_trigger">
+      <span class="animate__text" data-content="Play">
+        <span class="animate__text__hide">Play</span>
+      </span>
+    </button>
+    <img src="{{ section.thumbnail }}">
+  </div>
+  <script>
+    document.querySelectorAll('.video_modal_trigger').forEach((x) => {
+      x.addEventListener('click', () => {
+        document.querySelector('.video_modal').classList.toggle('active')
+      })
+    })
+  </script>
+</div>

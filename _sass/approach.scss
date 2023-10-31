@@ -1,0 +1,23 @@
+.approach {
+  &__images {
+    width: 100%;
+    margin: 4em 0 0;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2em;
+    align-items: flex-end;
+
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      grid-row: 2;
+
+      &:first-of-type {
+        grid-row: 1/3;
+      }
+    }
+  }
+}
