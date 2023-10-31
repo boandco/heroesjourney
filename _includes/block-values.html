@@ -1,14 +1,40 @@
 {% assign section = site.data.blocks.block-values %}
 <div id="values" class="section" data-scroll-section>
+  <div class="section__title">
+    <h2 class="letter-animate" id="{{ section.template }}-h2" data-scroll data-scroll-call="text-animate+{{ section.template }}-h2">{{ section.section_title }}</h2>
+  </div>
+  <div class="section__content offset offset__right">
+    <div class="section__content__container">
+      <p class="animate__fadeIn heading s-2" id="{{ section.template }}-desc" data-scroll data-scroll-call="animate-in+{{ section.template }}-desc">{{ section.description }}</p>
+    </div>
+  </div>
   <div class="sticky-container" id="sticky">
     <div class="sticky-overlay" data-scroll data-scroll-sticky data-scroll-target="#sticky">
-      <h2 id="values-h2">{{ section.section_title }}</h2>
-      <div class="text-fade"></div>
+      <div class="blob teal" id="blob_007"></div>
+      <div class="value-heading">
+        <h2 id="values-h2">{{ section.sticky_number }}</h2>
+        <p id="values-subhead">{{ section.sticky_subtitle }}</p>
+      </div>
+      <div class="text-fade">
+        <div class="desaturate"></div>
+        <div class="desaturate"></div>
+      </div>
     </div>
     <ul data-scroll>
       {% for value in section.values %}
-        <li>{{ value.title }}</li>
+        <li data-scroll>{{ value.title }}</li>
       {% endfor %}
     </ul>
   </div>
+  <button class="btn btn__plain btn__icon_text">
+    <div class="btn btn__circle btn__dark">
+      <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.539062 8.54565L19.6291 8.54565" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M13.0868 1.12895L20.5088 8.54574L13.0868 15.9678" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+      </svg>      
+    </div>
+    <span class="text">
+      view change makers <span class="bold">journey map</span>
+    </span>
+  </button>
 </div>

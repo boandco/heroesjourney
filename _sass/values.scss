@@ -1,9 +1,8 @@
 .section#values {
-  padding: 0;
   
   .sticky-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% auto;
     position: relative;
     width: 100vw;
   }
@@ -15,6 +14,7 @@
     display: flex;
     align-items: center;
     gap: 0;
+    pointer-events: none;
 
     @media screen and (max-width: $break-mobile) {
       position: sticky;
@@ -23,21 +23,48 @@
       left: 0;
     }
 
-    h2 {
-      font-size: clamp(2em, 25vw, 25em);
+    .value-heading {
+      width: 40%;
       text-align: right;
-      width: 50%;
-      margin: 0;
-      background: linear-gradient(20deg, $color-orange 40%, $color-indigo 60%, $color-turquoise 80%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      pointer-events: all;
+      h2 {
+        width: 100%;
+        font-size: clamp(2em, 25vw, 25em);
+        text-align: right;
+        margin: 0;
+      }
+      p {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.5em;
+        margin: 0;
+        position: relative;
+        top: -2.5em;
+      }
     }
+
     .text-fade {
-      width: 50%;
+      width: 60%;
       height: 100vh;
-      background: linear-gradient(360deg, $color-white 15%, rgba(0, 0, 0, 0) 50%, $color-white 85%);
       z-index: 1;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6em;
+
+      .desaturate {
+        height: 100%;
+        width: 100%;
+        backdrop-filter: saturate(0.3) hue-rotate(35deg);
+        &:first-of-type {
+          background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, $color-white 100%);
+        }
+        &:last-of-type {
+          background: linear-gradient(360deg, $color-white 0%, rgba(0, 0, 0, 0) 100%);
+        }
+      }
 
       @media screen and (max-width: $break-mobile) {
         background: linear-gradient(360deg, $color-white 30%, rgba(0, 0, 0, 0) 50%, $color-white 70%);
@@ -51,6 +78,7 @@
     margin-top: -35vh;
     padding: 0 0 60vh 1em;
     grid-column: 2/2;
+    color: $color-blue-crystal;
     li {
       margin: 10vh 0;
     }

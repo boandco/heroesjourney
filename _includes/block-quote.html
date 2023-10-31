@@ -1,0 +1,12 @@
+{% assign section = site.data.blocks.block-quote %}
+<section id="quote-{{ block.id }}" class="section divider blue quote" data-scroll-section>
+  <svg width="135" height="108" viewBox="0 0 135 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M80 107.997V60.7971C80 43.7304 85.3333 30.1304 96 19.9971C106.933 9.59706 119.867 3.19706 134.8 0.797058V19.5971C127.6 21.9971 121.2 26.3971 115.6 32.7971C110.267 39.1971 107.6 46.9304 107.6 55.9971H134V107.997H80ZM0.799988 107.997V60.7971C0.799988 43.7304 6.13332 30.1304 16.8 19.9971C27.7333 9.59706 40.6667 3.19706 55.6 0.797058V19.5971C48.4 21.9971 42 26.3971 36.4 32.7971C31.0667 39.1971 28.4 46.9304 28.4 55.9971H54.8V107.997H0.799988Z" fill="black"/>
+  </svg>
+  <div class="quote__contents">
+    <p class="animate__fadeIn quote" id="quote-{{ block.id }}-h2" data-scroll data-scroll-call="animate-in+quote-{{ block.id }}-h2">{{ section.quotes[block.id].quote }}</p>
+    <p class="author text-animate" id="quote-{{block.id}}-author" data-scroll data-scroll-call="text-animate+quote-{{block.id}}-author">
+      &#8212; {{ section.quotes[block.id].author }}
+    </p>
+  </div>
+</section>

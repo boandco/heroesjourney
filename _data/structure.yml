@@ -10,14 +10,18 @@ page_sections:
     label: Our approach
   - template: block-stories
     label: Stories
-  - template: block-values
-    label: Values
-  - template: block-services
-    label: Services
+  - template: block-partners
+    label: Partners
   - template: block-team
     label: Team
-  - template: block-divider
-    label: Divider
+  - template: block-quote
+    id: 0
+    label: Quote
+  - template: block-values
+    label: Values
+  - template: block-quote
+    id: 1
+    label: Quote
   - template: block-locations
     label: Locations
   - template: block-contact

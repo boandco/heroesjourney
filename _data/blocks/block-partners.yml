@@ -1,0 +1,11 @@
+template: block-partners
+section_title: Our partners
+partners:
+  - name: just keep livin
+    description: Juts Keep Livin is dedicated to empowering high school students by providing them with the tools to lead active lives and make healthy choices for a better future. We are excited to host JK Livin’s Mental Health Monday series in January to share more tools from the HJ social emotional toolbox.
+    image: https://images.squarespace-cdn.com/content/v1/5e20c2534be93e7c47a222ac/1603137039902-MI5YIVWHTH37UDWTRSAQ/jkl-logo-tm_300x%402x-2.png
+    url: https://justkeeplivin.com/
+  - name: mindspark learning
+    description: mindSpark Learning is leveraging industry to support educators and students so they can cultivate essential skills -- like creativity, emotional intelligence, critical thinking and adaptability -- which ultimately results in a more dynamic talent pipeline, and a workforce that industry can benefit from immediately. We are honored to partner with mSL to bring their “Education Accelerator” to SoCal Schools 2021!
+    image: https://images.squarespace-cdn.com/content/v1/5e20c2534be93e7c47a222ac/1603483848650-7YKVF4X75SZR73O4JE5F/100.jpeg
+    url: https://www.mindspark.org/

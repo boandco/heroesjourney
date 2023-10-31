@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway # Use test-repo for local, git-gateway for production
+  name: test-repo # Use test-repo for local, git-gateway for production
   branch: main # Branch to update (optional; defaults to master)
-  # local_backend: true
+  local_backend: true
 
 media_folder: "assets/images/uploads"
 public_folder: "assets/images/uploads"
@@ -52,15 +52,17 @@ collections:
           - {label: "Template", name: "template", widget: "hidden"}
           - {label: "Section Title", name: "section_title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
-          - label: "Images"
-            name: "images"
+          - label: "Slides"
+            name: "slides"
             widget: "list"
             min: 1
             max: 3
             allow_add: true
-            label_singular: "Image"
+            add_to_top: true
+            label_singular: "Slide"
             fields:
-              - {label: "Image", name: "url", choose_url: true, widget: "image"}
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Image", name: "image", choose_url: true, widget: "image"}
       - label: "Stories"
         name: "block-stories"
         file: "_data/blocks/block-stories.yml"
@@ -78,6 +80,25 @@ collections:
             display_fields: ["title"]
             multiple: true
             max: 4
+      - label: "Partners"
+        name: "block-partners"
+        file: "_data/blocks/block-partners.yml"
+        fields:
+          - {label: "Template", name: "template", widget: "hidden"}
+          - {label: "Section Title", name: "section_title", widget: "string"}
+          - label: "Partners"
+            name: "partners"
+            widget: "list"
+            label_singular: "Partner"
+            allow_add: true
+            collapsed: true
+            add_to_top: true
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Learn more link", name: "url", widget: "string"}
       - label: "Values"
         name: "block-values"
         file: "_data/blocks/block-values.yml"
@@ -127,6 +148,23 @@ collections:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Role", name: "role", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+      - label: "Quotes"
+        name: "block-quote"
+        file: "_data/blocks/block-quote.yml"
+        fields:
+          - {label: "Template", name: "template", widget: "hidden"}
+          - label: "Quotes"
+            name: "quotes"
+            widget: "list"
+            hint: "Only the top 2 are displayed in order on the homepage."
+            min: 2
+            label_singular: "Quote"
+            collapsed: true
+            add_to_top: true
+            summary: '{{fields.quote}} - {{fields.author}}'
+            fields:
+              - {label: "Quote", name: "quote", widget: "text"}
+              - {label: "Author", name: "author", widget: "string"}
       - label: "Divider"
         name: "block-divider"
         file: "_data/blocks/block-divider.yml"

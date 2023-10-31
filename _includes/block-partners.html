@@ -1,0 +1,37 @@
+{% assign section = site.data.blocks.block-partners %}
+<div id="partners" class="section flex" data-scroll-section>
+  <div class="image__right animate__fadeIn" id="partners-img" data-scroll data-scroll-call="animate-in+partners-img">
+    <img id="partners-image-src" src="{{section.partners[0].image}}">
+  </div>
+  <ul class="accordion">
+    {% for partner in section.partners %}
+      <li class="accordion__item partner {% if forloop.index == 1 %}active {% endif %}" id="{{ partner.name | slugify }}" data-image="{{partner.image}}">
+        <button class="btn accordion_trigger grid" data-limit="true" data-type="partner" data-for="{{ partner.name | slugify }}">
+          <span class="text-animate" id="{{ partner.name | slugify }}-name" data-scroll data-scroll-call="text-animate+{{ partner.name | slugify }}-name">{{ partner.name }}</span>
+          <span class="text-animate role" id="{{ partner.name | slugify }}-role" data-scroll data-scroll-call="text-animate+{{ partner.name | slugify }}-role">{{ partner.role }}</span>
+          <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.94214 0L9.94214 23" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+            <path d="M18.8781 15.1178L9.94221 24.06L1 15.1178" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+          </svg>              
+        </button>
+        <div class="panel">
+          <p>{{ partner.description | markdownify }}</p>
+          <a href="{{ partner.url}}" target="_blank">
+            Learn more
+            <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.92267 19.6097L19.4213 6.11107" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M9.55079 5.49272L20.0434 5.48901L20.0434 15.9854" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+            </svg>
+          </a>
+        </div>
+      </li>
+    {% endfor %}
+    <script>
+      document.querySelectorAll('.accordion__item.partner').forEach((x) => {
+        x.addEventListener('click', () => {
+          document.querySelector('#partners-image-src').setAttribute('src', x.getAttribute('data-image'));
+        })
+      })
+    </script>
+  </ul>
+</div>

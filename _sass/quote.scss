@@ -1,0 +1,13 @@
+.quote {
+  display: flex;
+  gap: 4em;
+  svg {
+    flex-shrink: 0;
+  }
+  &__contents {
+    font-size: 2.4em;
+    p.quote {
+      font-weight: 500;
+    }
+  }
+}

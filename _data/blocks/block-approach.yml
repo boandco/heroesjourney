@@ -2,7 +2,10 @@
 template: block-approach
 section_title: Our approach
 description: Heroes Journey offers educators an in-depth social emotional curriculum that leads students on a journey of self-discovery with an end goal of overcoming a big fear - public speaking.
-images:
-  - url: https://placehold.co/600x600/729FFE/000
-  - url: https://placehold.co/600x600/ABF4C0/000
-  - url: https://placehold.co/600x600/FD99A6/000
+slides:
+  - text: Students travel through 12 keystones, which are life tools that aim to ignite passion, voice, connection, fearlessness, inner leadership, knowledge of world issues, powerful presence and more.
+    image: https://placehold.co/600x600/729FFE/000
+  - text: As these keystones are experienced, the students build writing blocks for a presentation about something for which they take a stand. The keystones and blocks prepare students to tackle and support their fears.
+    image: https://placehold.co/600x600/ABF4C0/000
+  - text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed molestie sem. Pellentesque sed nisl sed odio vestibulum vehicula id id sem. Mauris fringilla purus eu nulla efficitur maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    image: https://placehold.co/600x600/FD99A6/000

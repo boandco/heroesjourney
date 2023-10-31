@@ -55,6 +55,11 @@ if (showCursor) {
 if (document.querySelector('.accordion_trigger')) {
   document.querySelectorAll('.accordion_trigger').forEach((x) => {
     x.addEventListener('click', () => {
+      if (x.getAttribute('data-limit') == 'true') {
+        document.querySelectorAll(`.accordion__item.${x.getAttribute('data-type')}.active`).forEach((el) => {
+          el.classList.remove('active')
+        })
+      }
       let target = x.getAttribute('data-for');
       document.getElementById(`${target}`).classList.toggle('active');
     })

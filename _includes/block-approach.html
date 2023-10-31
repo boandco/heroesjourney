@@ -6,10 +6,79 @@
       <p class="letter-animate heading s-2" id="{{ section.template }}-h2" data-scroll data-scroll-call="text-animate+{{ section.template }}-h2">{{ section.section_title }}</p>
       <p class="description animate__fadeIn" id="{{section.template}}-desc" data-scroll data-scroll-call="animate-in+{{section.template}}-desc">{{ section.description }}</p>
     </div>
-    <div class="approach__images">
-      {% for image in section.images %}
-        <img src="{{ image.url }}">
+    <div class="approach__slides">
+      <div class="approach__slides__text">
+        {% for slide in section.slides %}
+          <p id="{{section.template}}-slidetext-{{forloop.index}}" class="slide__text {% if forloop.index == 1 %}active animate__fadeIn" data-scroll data-scroll-call="animate-in+{{section.template}}-slidetext-{{forloop.index}}"{% else %}"{% endif %}>{{ slide.text }}</p>
+        {% endfor %}
+        <div id="{{ section.template }}-navigator" class="approach__slides__text__navigator animate__fadeIn" data-scroll data-scroll-call="animate-in+{{section.template}}-navigator">
+          <div class="slide-index">
+            <p id="approach-current" class="number current">01</p>
+            <p class="number count">/{{ section.slides | size | prepend: '0' }}</p>
+          </div>
+          <div class="buttons">
+            <button id="approach-prev" class="btn btn__circle approach-trigger" direction="previous" disabled>
+              <span class="visually-hidden">Previous</span>
+              <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.0599 9.94214L3.05994 9.94214" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M10.9421 18.8781L1.99993 9.94221L10.9421 1" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+              </svg> 
+            </button>
+            <button id="approach-next" class="btn btn__circle approach-trigger" direction="next">
+              <span class="visually-hidden">Next</span>
+              <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-0.00012207 9.93604L22.9999 9.93603" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M15.1177 1.00007L24.0599 9.93596L15.1177 18.8782" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+              </svg>                
+            </button>
+          </div>
+        </div>
+      </div>
+      {% for slide in section.slides %}
+        <img id="{{section.template}}-image-{{forloop.index}}" class="animate__fadeIn {% if forloop.index == 1 %}active{% endif %}" data-scroll data-scroll-call="animate-in+{{section.template}}-image-{{forloop.index}}" src="{{ slide.image }}">
       {% endfor %}
     </div>
+    <script>
+      var approach_slide_count = {{section.slides | size}};
+      var approach_current_slide = 1;
+
+      document.querySelectorAll('.approach-trigger').forEach((x) => {
+        x.addEventListener('click', () => {
+          if (x.getAttribute('direction') == 'next') {
+            //next
+            changeSlide(approach_current_slide, approach_current_slide + 1)
+            approach_current_slide ++;
+          } else {
+            //prev
+            changeSlide(approach_current_slide, approach_current_slide - 1);
+            approach_current_slide --;
+          }
+        })
+      })
+
+      function changeSlide(current_slide, next_slide) {
+        if (next_slide > 1 && next_slide < approach_slide_count) {
+          document.querySelector('#approach-next').disabled = false;
+          document.querySelector('#approach-prev').disabled = false;
+        }
+        // Handle next disable
+        if (next_slide == approach_slide_count) {
+          document.querySelector('#approach-next').disabled = true;
+        }
+        //Hande prev disable
+        if (next_slide == 1) {
+          document.querySelector('#approach-prev').disabled = true;
+        }
+
+        //Remove current
+        document.querySelector(`#{{section.template}}-slidetext-${current_slide}`).classList.remove('active')
+        document.querySelector(`#{{section.template}}-image-${current_slide}`).classList.remove('active')
+
+        //Handle next
+        document.querySelector(`#{{section.template}}-slidetext-${next_slide}`).classList.add('active')
+        document.querySelector(`#{{section.template}}-image-${next_slide}`).classList.add('active')
+        document.querySelector(`#approach-current`).innerHTML = `0${next_slide}`;
+      }
+    </script>
   </div>
 </div>
