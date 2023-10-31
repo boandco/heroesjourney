@@ -157,21 +157,18 @@ collections:
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Email", name: "email", widget: "string"}
-  - label: "Work"
-    name: "projects"
-    folder: "_projects"
+  - label: "Stories"
+    name: "stories"
+    folder: "_stories"
     create: true
     slug: "{{slug}}"
-    label_singular: "Project"
+    label_singular: "Story"
     editor:
       preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Media Type (Social Media, TV/Streaming)", name: "media", widget: "string"}
-      - {label: "Credit Name", name: "credit_name", widget: "string"}
-      - {label: "Credit Role", name: "credit_title", widget: "string"}
       - {label: "Thumbnail", name: "image", widget: "image", choose_url: true}
-      - {label: "Project Video", name: "source", widget: "file"}
+      - {label: "Story Video", name: "source", widget: "file"}
   - label: "Footer"
     name: "footer"
     editor:
