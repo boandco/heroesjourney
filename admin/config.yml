@@ -67,7 +67,7 @@ collections:
         fields:
           - {label: "Template", name: "template", widget: "hidden"}
           - {label: "Section Title", name: "section_title", widget: "string"}
-          - {label: "Description", name: "description",  widget: "text"}
+          - {label: "Description", name: "description",  widget: "text", required: false}
           - label: "Featured stories"
             name: "selected_stories"
             hint: "To edit stories navigate to the [Stories](/admin/#/collections/stories) tab."
