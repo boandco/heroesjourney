@@ -1,3 +1,4 @@
 template: block-stories
 section_title: Featured stories
 selected_stories:
+  - highlighted talk
