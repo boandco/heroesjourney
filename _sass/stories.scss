@@ -49,13 +49,12 @@
     justify-content: space-between;
 
     &__project {
-      background: $color-off-black;
+      background: $color-light-blue;
       height: 750px;
       width: 100%;
       flex-shrink: 1;
       flex-grow: 1;
       position: relative;
-      cursor: pointer;
       transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
       padding: 2em;
       display: flex;
@@ -73,33 +72,17 @@
 
       &:nth-of-type(1) {
         &:after {
-          background: linear-gradient(90deg, $color-indigo 0vw, $color-orange 50vw);
+          background: linear-gradient(90deg, $color-peach 0%, $color-mint 100%);
         }
       }
       &:nth-of-type(2) {
         &:after {
-          background: linear-gradient(90deg, $color-indigo -10vw, $color-orange 10vw, $color-turquoise 100vw);
+          background: linear-gradient(90deg, $color-mint 0%, $color-blue-crystal 100%);
         }
       }
       &:nth-of-type(3) {
         &:after {
-          background: linear-gradient(90deg, $color-orange -50vw, $color-turquoise 50vw);
-        }
-      }
-
-      &:hover {
-        &:not(.active) {
-          img {
-            opacity: 1;
-          }
-          p.number {
-            &:before {
-              transform: translateY(-100%);
-            }
-            &:after {
-              transform: translateY(0);
-            }
-          }
+          background: linear-gradient(90deg, $color-blue-crystal 0%, $color-violet 100%);
         }
       }
       
@@ -131,7 +114,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-          opacity: 0.5;
+          opacity: 1;
           position: absolute;
           top: 0;
           left: 0;
@@ -182,40 +165,46 @@
         color: $color-white;
         position: relative;
         overflow: hidden;
+        &::after {
+          color: $color-black;
+        }
+        @media screen and (max-width: $break-mobile) {
+          color: $color-black;
+        }
       }
 
-      &.is-animating {
-        width: 60%;
-        flex-shrink: 0;
-        .thumbnail {
-          width: calc(100% - 4em);
-          height: 450px;
-          top: 2em;
-          left: 2em;
-          img,button {
+      @media screen and (min-width: $break-mobile) {
+        &:hover {
+          width: 60%;
+          flex-shrink: 0;
+          .thumbnail {
+            width: calc(100% - 4em);
+            height: 450px;
+            top: 2em;
+            left: 2em;
+            img,button {
+              opacity: 1;
+            }
+          }
+          .information {
             opacity: 1;
+            p span {
+              transform: translateY(0);
+            }
           }
-        }
-      }
-      &.active {
-        .information {
-          opacity: 1;
-          p span {
-            transform: translateY(0);
+          .thumbnail {
+            cursor: default;
+            button {
+              pointer-events: all;
+            }
           }
-        }
-        .thumbnail {
-          cursor: default;
-          button {
-            pointer-events: all;
-          }
-        }
-        p.number {
-          &:before {
-            transform: translateY(-100%);
-          }
-          &:after {
-            transform: translateY(0);
+          p.number {
+            &:before {
+              transform: translateY(-100%);
+            }
+            &:after {
+              transform: translateY(0);
+            }
           }
         }
       }

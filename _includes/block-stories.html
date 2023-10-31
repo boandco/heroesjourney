@@ -5,9 +5,9 @@
   </div>
   <div class="stories__projects">
     {% for selected_project in section.selected_stories %}
-      {% assign found_project = site.projects | where:"title", selected_project %}
+      {% assign found_project = site.stories | where:"title", selected_project %}
       {% assign project = found_project[0] %}
-      <a id="{{ project.title | slugify }}" data-scroll data-scroll-call="animate-in+{{ project.title | slugify }}" class="stories__projects__project project animate__fadeIn">
+      <div id="{{ project.title | slugify }}" data-scroll data-scroll-call="animate-in+{{ project.title | slugify}}" class="stories__projects__project project animate__fadeIn">
         <div class="thumbnail">
           <button class="btn btn__circle btn__light btn__scale btn__text-animate story_modal_open" data-source="{{ project.source }}" data-poster="{{ project.image }}">
             <span class="animate__text" data-content="Play">
@@ -19,8 +19,7 @@
         <div class="content">
           <div class="information">
             <p class="title" style="--transition-delay: 0.1s"><span>{{ project.title }}</span></p>
-            <p class="media" style="--transition-delay: 0.2s"><span>{{ project.media }}</span></p>
-            <p class="credit" style="--transition-delay: 0.3s"><span>{{ project.credit_title }}: {{ project.credit_name }}</span></p>
+            <p class="description" style="--transition-delay: 0.2s"><span>{{ project.description }}</span></p>
           </div>
           <div class="preview">
             <p class="number animate__text" data-content="0{{ forloop.index }}">
@@ -28,32 +27,10 @@
             </p>
           </div>
         </div>
-      </a>
+      </div>
     {% endfor %}
   </div>
   <script>
-    let active_project = null;
-    if (window.innerWidth > 1024) {
-      document.querySelectorAll('.project').forEach((x) => {
-        x.addEventListener('click', () => {
-          if (active_project == x.getAttribute('id')) {
-            //Reset active
-            active_project = null;
-          } else {
-            //Not active, make active
-            if (active_project != null) {
-              document.querySelectorAll('.project.active').forEach((proj_active) => {
-                proj_active.classList.toggle('is-animating');
-                proj_active.classList.toggle('active');
-              });
-            }
-            active_project = x.getAttribute('id');
-          }
-          x.classList.toggle('is-animating');
-          x.classList.toggle('active');
-        });
-      });
-    }
     document.querySelectorAll('.story_modal_open').forEach((proj) => {
       proj.addEventListener('click', () => {
         let modal = document.querySelector('.story_modal');

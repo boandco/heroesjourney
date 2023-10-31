@@ -167,6 +167,7 @@ collections:
       preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Thumbnail", name: "image", widget: "image", choose_url: true}
       - {label: "Story Video", name: "source", widget: "file"}
   - label: "Footer"
