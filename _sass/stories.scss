@@ -1,4 +1,4 @@
-.story_modal {
+.video_modal {
   background: $color-black;
   top: 0;
   left: 0;
@@ -63,26 +63,26 @@
       
       &:after {
         content: '';
-        height: 4px;
+        height: 8px;
         width: 100%;
         position: absolute;
-        bottom: -4px;
+        bottom: 0;
         left: 0;
       }
 
       &:nth-of-type(1) {
         &:after {
-          background: linear-gradient(90deg, $color-peach 0%, $color-mint 100%);
+          background: linear-gradient(90deg, get-color(intention) 0%, get-color(perspective) 100%);
         }
       }
       &:nth-of-type(2) {
         &:after {
-          background: linear-gradient(90deg, $color-mint 0%, $color-blue-crystal 100%);
+          background: linear-gradient(90deg, get-color(perspective) 0%, get-color(grit) 100%);
         }
       }
       &:nth-of-type(3) {
         &:after {
-          background: linear-gradient(90deg, $color-blue-crystal 0%, $color-violet 100%);
+          background: linear-gradient(90deg, get-color(grit) 0%, get-color(vulnerability) 100%);
         }
       }
       

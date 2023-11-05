@@ -1,4 +1,4 @@
-.section#values {
+.section#keystones {
   
   .sticky-container {
     display: grid;
@@ -23,7 +23,7 @@
       left: 0;
     }
 
-    .value-heading {
+    .keystone-heading {
       width: 40%;
       text-align: right;
       pointer-events: all;
@@ -57,7 +57,6 @@
       .desaturate {
         height: 100%;
         width: 100%;
-        backdrop-filter: saturate(0.3) hue-rotate(35deg);
         &:first-of-type {
           background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, $color-white 100%);
         }
@@ -78,9 +77,13 @@
     margin-top: -35vh;
     padding: 0 0 60vh 1em;
     grid-column: 2/2;
-    color: $color-blue-crystal;
     li {
+      color: $color-muted;
       margin: 10vh 0;
+      transition: color 0.2s ease-in-out;
+      &.is-inview {
+        color: var(--color);
+      }
     }
     @media screen and (max-width: $break-mobile) {
       font-size: clamp(1em, 6vw, 10em);

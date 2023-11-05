@@ -1,19 +1,19 @@
 ---
-template: block-values
+template: block-keystones
 section_title: What we do
 description: Heroes Journey activates future leaders & change makers by creating a platform for young leaders to connect and present ideas that inspire, empower and enlighten the world, on a global stage.
 sticky_number: 12
 sticky_subtitle: keystones
-values:
-  - title: stories
+keystones:
   - title: passion
   - title: vulnerability
+  - title: stories
   - title: perspective
-  - title: instinct
+  - title: connection
+  - title: listen
+  - title: grit
+  - title: intention
+  - title: courage
+  - title: confidence
   - title: gratitude
-  - title: influence
-  - title: eight
-  - title: nine
-  - title: ten
-  - title: eleven
-  - title: twelve
+  - title: celebration

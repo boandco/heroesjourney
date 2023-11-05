@@ -65,3 +65,24 @@ if (document.querySelector('.accordion_trigger')) {
     })
   });
 }
+
+if (document.querySelector('.video_modal_trigger')) {
+  document.querySelectorAll('.video_modal_trigger').forEach((proj) => {
+    proj.addEventListener('click', () => {
+      let modal = document.querySelector('.video_modal');
+      let player = document.getElementById('video_modal_player');
+      let player_source = document.getElementById('video_modal_source');
+      if (modal.classList.contains('active')) {
+        player.pause();
+        modal.classList.remove('active');
+      } else {
+        player.setAttribute('poster', proj.getAttribute('data-poster'));
+        player_source.setAttribute('src', proj.getAttribute('data-source'));
+        player_source.setAttribute('type', 'video/mp4');
+        player.load();
+        modal.classList.add('active');
+        player.play();
+      }
+    });
+  });
+}

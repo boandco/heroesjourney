@@ -1,0 +1,22 @@
+{% assign section = site.data.blocks.block-topics %}
+<div id="topics" class="section" data-scroll-section>
+  <div class="section__content offset offset__right">
+    <div class="section__content__container">
+      <p class="animate__fadeIn heading s-2" id="{{ section.template }}-desc" data-scroll data-scroll-call="animate-in+{{ section.template }}-desc">{{ section.description }}</p>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="image__right animate__fadeIn" id="topics-img" data-scroll data-scroll-call="animate-in+topics-img">
+      {% include assets/gradient-logo.html %}
+    </div>
+    <ul class="accordion static">
+      {% for topic in section.topics %}
+        <li class="accordion__item topic">
+          <div class="title">
+            <span class="text-animate topic" id="{{ topic.title | slugify }}-code" data-scroll data-scroll-call="text-animate+{{ topic.title | slugify }}-code">{{ topic.title }}</span>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

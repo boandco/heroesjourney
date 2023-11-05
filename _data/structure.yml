@@ -17,12 +17,12 @@ page_sections:
   - template: block-quote
     id: 0
     label: Quote
-  - template: block-values
-    label: Values
+  - template: block-keystones
+    label: Keystones
   - template: block-quote
     id: 1
     label: Quote
-  - template: block-locations
-    label: Locations
+  - template: block-topics
+    label: Topics
   - template: block-contact
     label: Contact

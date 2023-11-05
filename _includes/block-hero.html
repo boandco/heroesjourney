@@ -1,15 +1,14 @@
 {% assign section = site.data.blocks.block-hero %}
 <div id="home" class="section hero" data-scroll-section>
   <div class="content" data-scroll>
-    {% assign headline = section.headline | split: ' ' %}
-    <h1 id="hero-h1" style="--headline-count: {{ headline | size }}">
-      {% for line in headline %}
+    <h1 id="hero-h1" style="--headline-count: {{ section.headline | size }}">
+      {% for line in section.headline %}
         <span class="h1-line" data-scroll data-scroll-speed="2">
           <span id="hero-h1-{{ forloop.index }}"
             class="letter-animate"
             data-scroll-call="text-animate+hero-h1-{{ forloop.index }}"
             data-scroll>
-            {{ line }}
+            {{ line.text }}
           </span>
         </span>
       {% endfor %}

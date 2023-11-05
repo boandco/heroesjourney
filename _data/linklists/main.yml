@@ -1,12 +1,16 @@
 ---
 links:
-  - title: Home
-    url: '#home'
-  - title: About
+  - title: About Us
     url: '#about'
-  - title: Work
-    url: '#work'
+  - title: Stories
+    url: '#stories'
+  - title: Partnerships
+    url: '#partners'
   - title: Team
     url: '#team'
-  - title: Contact
+  - title: What We Do
+    url: '#keystones'
+  - title: Summit
+    url: '#summit'
+  - title: Contact Us
     url: '#contact'

@@ -1,3 +1,6 @@
 ---
 template: block-hero
-headline: Activating Change Makers
+headline:
+  - text: empowering
+  - text: students around
+  - text: the world

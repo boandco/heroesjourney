@@ -1,8 +1,0 @@
-show_social_media: false
-social_media:
-  - url: https://instagram.com/
-    social_network: Instagram
-  - url: https://facebook.com/
-    social_network: Facebook
-  - url: https://youtube.com/
-    social_network: YouTube

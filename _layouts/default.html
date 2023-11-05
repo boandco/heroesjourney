@@ -6,25 +6,17 @@
   <body>
     {% include loading.html %}
     <div id="cursor" class="cursor mobile-hide"></div>
-    <div class="story_modal">
-      <button class="btn btn__circle btn__scale btn__light" id="video_close">
+    <div class="video_modal">
+      <button class="btn btn__circle btn__scale btn__light video_modal_trigger" id="video_close">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1L17.2635 17.2635" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
           <path d="M17.2634 1L0.999973 17.2635" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
         </svg>          
         <span class="visually-hidden">Close modal</span>
       </button>
-      <video id="story_modal_player" controls>
-        <source id="story_modal_source">
+      <video id="video_modal_player" controls>
+        <source id="video_modal_source">
       </video>
-      <script>
-        document.getElementById('video_close').addEventListener('click', () => {
-          let modal = document.querySelector('.story_modal');
-          let player = document.getElementById('story_modal_player');
-          player.pause();
-          modal.classList.remove('active');
-        });
-      </script>
     </div>
     {% include navigation.html %}
     <div class="wrapper" data-scroll-container>

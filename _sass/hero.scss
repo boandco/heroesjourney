@@ -19,11 +19,19 @@
 
   .hero-logo {
     position: absolute;
-    top: 12vh;
+    top: 5vh;
     left: 12vw;
     svg {
       min-width: 600px;
       height: auto;
+      animation: 25s spinLogo infinite linear;
+      @keyframes spinLogo {
+        from {
+          transform: rotate(0deg);
+        } to {
+          transform: rotate(360deg);
+        }
+      }
     }
   }
 
@@ -31,6 +39,11 @@
     width: 100%;
     position: relative;
     z-index: 3;
+    height: calc(100vh - 25vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     h1 {
       margin: 0;  
       color: $color-black;
@@ -39,7 +52,7 @@
         width: 100%;
         border-bottom: 1px solid $color-black;
         display: block;
-        $h1-font-size: clamp(1em, calc(55vh / var(--headline-count)), 250px);
+        $h1-font-size: clamp(1em, calc(30vw / var(--headline-count)), 250px);
         font-size: $h1-font-size;
         height: $h1-font-size;
         margin: 0;
@@ -48,10 +61,7 @@
         //Add breakpoints for height & font size
 
         &:nth-of-type(2) {
-          padding-right: 25vw;
-        }
-        &:nth-of-type(3) {
-          padding-right: 10vw;
+          text-align: left;
         }
       }
     }

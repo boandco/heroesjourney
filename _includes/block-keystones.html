@@ -1,5 +1,5 @@
-{% assign section = site.data.blocks.block-values %}
-<div id="values" class="section" data-scroll-section>
+{% assign section = site.data.blocks.block-keystones %}
+<div id="keystones" class="section" data-scroll-section>
   <div class="section__title">
     <h2 class="letter-animate" id="{{ section.template }}-h2" data-scroll data-scroll-call="text-animate+{{ section.template }}-h2">{{ section.section_title }}</h2>
   </div>
@@ -11,9 +11,9 @@
   <div class="sticky-container" id="sticky">
     <div class="sticky-overlay" data-scroll data-scroll-sticky data-scroll-target="#sticky">
       <div class="blob teal" id="blob_007"></div>
-      <div class="value-heading">
-        <h2 id="values-h2">{{ section.sticky_number }}</h2>
-        <p id="values-subhead">{{ section.sticky_subtitle }}</p>
+      <div class="keystone-heading">
+        <h2 id="keystones-h2">{{ section.sticky_number }}</h2>
+        <p id="keystones-subhead">{{ section.sticky_subtitle }}</p>
       </div>
       <div class="text-fade">
         <div class="desaturate"></div>
@@ -21,8 +21,8 @@
       </div>
     </div>
     <ul data-scroll>
-      {% for value in section.values %}
-        <li data-scroll>{{ value.title }}</li>
+      {% for keystone in section.keystones %}
+        <li class="color-{{keystone.title}}" data-scroll data-scroll-repeat data-scroll-offset="45%, 45%">{{ keystone.title }}</li>
       {% endfor %}
     </ul>
   </div>

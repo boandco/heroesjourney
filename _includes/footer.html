@@ -5,7 +5,7 @@
         {% include assets/text-logo.html %}
       </div>
       <ul class="sitemap__links">
-        {% for link in site.data.linklists.footer.links %}
+        {% for link in site.data.linklists.main.links %}
           <li>
             <a href="{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% else %}class="local"{% endif %}>{{ link.title }}</a>
           </li>
@@ -13,11 +13,9 @@
       </ul>
       <div class="sitemap__contact">
         <div class="address">
-          {% for line in site.data.footer.contact.address %}
-            <p class="muted line">{{ line.title }}</p>
-          {% endfor %}
+          <p class="muted line">CONTACT US</p>
+          <p>{{ site.data.footer.contact.email }}</p>
         </div>
-        <p>{{ site.data.footer.contact.email }}</p>
         {% if site.data.footer.socials.show_social_media %}
           <ul class="sitemap__contact__socials">
             {% for network in site.data.footer.socials.social_media %}
@@ -34,7 +32,7 @@
     </div>
     <div class="copyright">
       <div class="copyright__info">
-        Copyright {{ 'now' | date: '%Y' }} {{ site.title }}
+        &copy; Copyright {{ 'now' | date: '%Y' }} {{ site.title }}
       </div>
       <div class="copyright__logo mobile-hide">
         <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">

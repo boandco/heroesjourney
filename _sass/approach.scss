@@ -63,12 +63,42 @@
       }
     }
 
-    img {
+    &__image {
       width: 100%;
       height: 100%;
-      aspect-ratio: 1/1;
-      object-fit: cover;
       grid-row: 2;
+      position: relative;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 8px;
+        width: 100%;
+      }
+
+      &:nth-of-type(2) {
+        &:after {
+          background: linear-gradient(90deg, get-color(stories) 0%, get-color(grit) 100%);
+        }
+      }
+      &:nth-of-type(3) {
+        &:after {
+          background: linear-gradient(90deg, get-color(intention) 0%, get-color(listen) 100%);
+        }
+      }
+      &:nth-of-type(4) {
+        &:after {
+          background: linear-gradient(90deg, get-color(vulnerability) 0%, get-color(passion) 100%);
+        }
+      }
 
       &.active {
         grid-row: 1/3;

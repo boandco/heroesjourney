@@ -1,0 +1,15 @@
+---
+contact:
+  address:
+    - title: Contact us
+  phone_number: 888-373-8888
+  email: INFO@heroesjourney.com
+socials:
+  show_social_media: false
+  social_media:
+    - url: https://instagram.com/
+      social_network: Instagram
+    - url: https://facebook.com/
+      social_network: Facebook
+    - url: https://youtube.com/
+      social_network: YouTube

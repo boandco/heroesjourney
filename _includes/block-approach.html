@@ -35,7 +35,9 @@
         </div>
       </div>
       {% for slide in section.slides %}
-        <img id="{{section.template}}-image-{{forloop.index}}" class="animate__fadeIn {% if forloop.index == 1 %}active{% endif %}" data-scroll data-scroll-call="animate-in+{{section.template}}-image-{{forloop.index}}" src="{{ slide.image }}">
+        <div id="{{section.template}}-image-{{forloop.index}}" class="approach__slides__image animate__fadeIn {% if forloop.index == 1 %}active{% endif %}" data-scroll data-scroll-call="animate-in+{{section.template}}-image-{{forloop.index}}">
+          <img src="{{ slide.image }}">
+        </div>
       {% endfor %}
     </div>
     <script>

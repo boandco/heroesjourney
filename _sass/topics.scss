@@ -1,4 +1,22 @@
-.section#locations {
+.section#topics {
+
+  .section__content {
+    margin-bottom: 6em;
+  }
+
+  .flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $break-mobile) {
+      flex-wrap: wrap;
+      gap: 4em;
+      .accordion__item.topic .title {
+        color: $color-black !important;
+      }
+    }
+  }
   .image__right {
     width: 50%;
     display: flex;

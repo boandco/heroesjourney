@@ -4,22 +4,32 @@ $color-off-black: #191919;
 $color-off-white: #D9D9D9;
 
 $color-light-blue: #E8F5FF;
+$color-muted: #C8CAE0;
 
-//Gradient colors
-$color-pink: #FD99A6;
-$color-peach: #FFC399;
-$color-orange: #FDD79B;
-$color-lime: #E6E6A6;
-$color-mint: #ABF4C0;
-$color-turquoise: #7FEED9;
-$color-turquoise-blue: #67D1F3;
-$color-blue-crystal: #5DB9FF;
-$color-blue-butterfly: #5FA7FF;
-$color-blue-periwinkle: #729FFE;
-$color-indigo: #9DA5FA;
-$color-violet: #CAA2DB;
+$colors: (
+  passion: #FFA9D2,
+  vulnerability: #8388FC,
+  stories: #87F9EB,
+  perspective: #A0FFBB,
+  connection: #E9A7F9,
+  listen: #FBEC9D,
+  grit: #5EBBFF,
+  intention: #FEBD9B,
+  courage: #E9A7F9,
+  confidence: #FF9999,
+  gratitude: #A0FFBB,
+  celebration: #FFEC80
+);
+@each $name, $color in $colors {
+  .color-#{$name} {
+    --color: #{$color};
+  }
+}
+@function get-color($value) {
+  @return map-get($colors, $value);
+}
 
 //Gradients
-$gradient-blue: conic-gradient(from 196deg at 62.19% 44.91%, $color-blue-periwinkle 0deg, $color-indigo 183.75000715255737deg, $color-peach 360deg);
-$gradient-teal: conic-gradient(from 196deg at 62.19% 44.91%, $color-turquoise 0deg, $color-turquoise-blue 183.75000715255737deg, $color-lime 360deg);
-$gradient-orange: conic-gradient(from 196deg at 62.19% 44.91%, $color-peach 0deg, $color-pink 183.75000715255737deg, $color-orange 360deg);
+$gradient-blue: conic-gradient(from 196deg at 62.19% 44.91%, get-color(grit) 0deg, get-color(vulnerability) 183.75000715255737deg, get-color(intention) 360deg);
+$gradient-teal: conic-gradient(from 196deg at 62.19% 44.91%, get-color(stories) 0deg, get-color(grit) 183.75000715255737deg, get-color(celebration) 360deg);
+$gradient-orange: conic-gradient(from 196deg at 62.19% 44.91%, get-color(listen) 0deg, get-color(confidence) 183.75000715255737deg, get-color(intention) 360deg);
