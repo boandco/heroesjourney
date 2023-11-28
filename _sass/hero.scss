@@ -21,10 +21,18 @@
     position: absolute;
     top: 5vh;
     left: 12vw;
+    @media screen and (max-width: $break-mobile) {
+      top: 10vh;
+      left: -10vw;
+    }
     svg {
       min-width: 600px;
       height: auto;
       animation: 25s spinLogo infinite linear;
+      @media screen and (max-width: $break-mobile) {
+        min-width: unset;
+        width: 80vw;
+      }
       @keyframes spinLogo {
         from {
           transform: rotate(0deg);
@@ -39,7 +47,7 @@
     width: 100%;
     position: relative;
     z-index: 3;
-    height: calc(100vh - 25vh);
+    min-height: calc(100vh - 25vh);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,7 +69,8 @@
         //Add breakpoints for height & font size
 
         &:nth-of-type(2) {
-          text-align: left;
+          text-align: right;
+          padding-right: 25vw;
         }
       }
     }
@@ -70,11 +79,10 @@
     }
 
     @media screen and (max-width: $break-mobile) {
-      height: 100%;
+      height: calc(100vh - #{$gutter});
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      padding-top: 20vh;
+      justify-content: flex-end;
       h1 {
         font-size: clamp(1em, 14vw, 8em);
       }

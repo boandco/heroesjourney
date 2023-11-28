@@ -25,5 +25,14 @@
       top: calc(50% - calc(120px / 2));
       left: calc(50% - calc(120px / 2));
     }
+
+    @media screen and (max-width: $break-mobile) {
+      height: 85vh;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }

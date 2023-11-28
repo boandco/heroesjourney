@@ -19,6 +19,8 @@ page_sections:
     label: Quote
   - template: block-keystones
     label: Keystones
+  - template: block-summit
+    label: CM Summit
   - template: block-quote
     id: 1
     label: Quote

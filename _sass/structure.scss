@@ -31,6 +31,9 @@ $break-mobile: '1024px';
 
 [data-scroll-container] {
   perspective: 1px;
+  @media screen and (max-width: $break-mobile) {
+    overflow: hidden;
+  }
 }
 [data-scroll-section] {
   perspective: 1px;
@@ -165,18 +168,18 @@ a {
           font-size: clamp(1.8em, 3vw, 3em);
         }
       }
-      &.description {
-        font-size: clamp(1.4em, 2vw, 2em);
-        font-weight: 300;
-        &.bullet {
-          margin: 0 0 2em;
-          padding: 0 0 2em;
-          border-bottom: 1px solid $color-black;
-          &:last-of-type {
-            border-bottom: none;
-            margin: 0;
-            padding: 0;
-          }
+    }
+    .description {
+      font-size: clamp(1.4em, 2vw, 2em);
+      font-weight: 300;
+      &.bullet {
+        margin: 0 0 2em;
+        padding: 0 0 2em;
+        border-bottom: 1px solid $color-black;
+        &:last-of-type {
+          border-bottom: none;
+          margin: 0;
+          padding: 0;
         }
       }
     }
@@ -190,6 +193,9 @@ a {
 
   &.large {
     width: 75%;
+  }
+  &.spaced {
+    margin: 4em 0;
   }
 
   @media screen and (max-width: $break-mobile) {
@@ -214,6 +220,10 @@ a {
       font-weight: 500;
       padding: 1.4em 0 0.3em;
       text-transform: lowercase;
+
+      &.static {
+        padding: 1.4em 0 1.3em;
+      }
 
       @media screen and (max-width: $break-mobile) {
         font-size: 1.6em;
@@ -245,7 +255,7 @@ a {
         }
       }
 
-      &:hover {
+      &:not(.static):hover {
         padding: 1.4em $padding 0.3em;
         svg {
           opacity: 1;

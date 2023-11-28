@@ -2,87 +2,105 @@ template: block-team
 section_title: Team
 heading: our team of collectives...
 description: are passionate people dedicated to making empowerment content.
-members:
-  - name: Eric Alan Donaldson
-    role: Co-founder
-    description: >
-      Eric is a veteran content creator and visionary. In his career that spans
-      over 20 years in media production, he has developed a keen ability to seek
-      out emerging markets and new technologies. His sense of “what's next” has
-      won him advertising and marketing campaigns with global brands such as
-      Lexus, Corona, Nike and Red Bull, organizations such as the NBA and NFL,
-      and networks such as ESPN, TLC, Disney and Hallmark.
+groups:
+  - name: Team
+    members:
+      - name: Eric Alan Donaldson
+        role: Co-founder
+        description: >
+          Eric is a veteran content creator and visionary. In his career that spans
+          over 20 years in media production, he has developed a keen ability to seek
+          out emerging markets and new technologies. His sense of “what's next” has
+          won him advertising and marketing campaigns with global brands such as
+          Lexus, Corona, Nike and Red Bull, organizations such as the NBA and NFL,
+          and networks such as ESPN, TLC, Disney and Hallmark.
 
 
-      During his tenure, Eric has created a collective network of media professionals who create original, socially conscious content, which elevates brands and cultivates good humans worldwide.
-  - name: Kristin Prouty
-    role: Co-founder
-    description: >
-      Kristin has spent her career establishing herself as a best-in-class
-      within the entertainment industry. Her strengths lie in connecting,
-      producing, vision and execution. Kristin has been instrumental in
-      launching some of the most notables brands in show business: Survivor,
-      Apprentice, Biggest Loser, Jimmy Kimmel Live as she's helped cast,
-      produce, celebrity book for over 30+ popular shows. Kristin launched the
-      Entertainment Relations division for WWE and retained a SVP position. She
-      helped jumpstart careers for people like the Bella Twins, Logan Paul and
-      facilitated many celebrity storylines with people like Hugh Jackman, Kevin
-      Hart, Floyd Mayweather, Johnny Knoxville and others. She booked WWE talent
-      on most notable Broadcast TV shows; she spearheaded partnerships with
-      major social media influencers (including Dude Perfect, Mr. Beast, Lilly
-      Singh, and many more), WWE talent at red carpet events, major award shows,
-      and more.
+          During his tenure, Eric has created a collective network of media professionals who create original, socially conscious content, which elevates brands and cultivates good humans worldwide.
+      - name: Kristin Prouty
+        role: Co-founder
+        description: >
+          Kristin has spent her career establishing herself as a best-in-class
+          within the entertainment industry. Her strengths lie in connecting,
+          producing, vision and execution. Kristin has been instrumental in
+          launching some of the most notables brands in show business: Survivor,
+          Apprentice, Biggest Loser, Jimmy Kimmel Live as she's helped cast,
+          produce, celebrity book for over 30+ popular shows. Kristin launched the
+          Entertainment Relations division for WWE and retained a SVP position. She
+          helped jumpstart careers for people like the Bella Twins, Logan Paul and
+          facilitated many celebrity storylines with people like Hugh Jackman, Kevin
+          Hart, Floyd Mayweather, Johnny Knoxville and others. She booked WWE talent
+          on most notable Broadcast TV shows; she spearheaded partnerships with
+          major social media influencers (including Dude Perfect, Mr. Beast, Lilly
+          Singh, and many more), WWE talent at red carpet events, major award shows,
+          and more.
 
 
-      Kristin also founded the empowerment studio known as JOURNEY 8 and 501c3 [Heroes Journey](http://heroesjourney.com).
-  - name: Geof Rochester
-    role: Marketing
-    description: >
-      A recognized thought-leader across corporate sustainability and
-      responsibility, NGOs, philanthropy, and social entrepreneurship. He brings
-      distinctive and dynamic experience with the world’s leading conservation
-      NGO, media companies, and consumer goods brands.
+          Kristin also founded the empowerment studio known as JOURNEY 8 and 501c3 [Heroes Journey](http://heroesjourney.com).
+      - name: Geof Rochester
+        role: Marketing
+        description: >
+          A recognized thought-leader across corporate sustainability and
+          responsibility, NGOs, philanthropy, and social entrepreneurship. He brings
+          distinctive and dynamic experience with the world’s leading conservation
+          NGO, media companies, and consumer goods brands.
 
 
-      Most recently, Geof served in global roles as Managing Director and Chief Marketing Officer of The Nature Conservancy, where he was responsible for steering the organization's marketing, membership and visibility strategies. Prior, Geof held the positions of Executive Vice President for Marketing at World Wrestling Entertainment and Senior Vice President for Marketing at Showtime Networks. Earlier in his career, Geof served in senior marketing positions with Comcast Communications, Radisson Hotels International and P&G.
+          Most recently, Geof served in global roles as Managing Director and Chief Marketing Officer of The Nature Conservancy, where he was responsible for steering the organization's marketing, membership and visibility strategies. Prior, Geof held the positions of Executive Vice President for Marketing at World Wrestling Entertainment and Senior Vice President for Marketing at Showtime Networks. Earlier in his career, Geof served in senior marketing positions with Comcast Communications, Radisson Hotels International and P&G.
 
 
-      Geof holds board positions and consults with several nonprofit organizations, helping them advance their missions through strategic marketing efforts. He speaks regularly on the topics of brand purpose and sustainability. Geof is a graduate of Georgetown University and received an MBA from the Wharton School of the University of Pennsylvania.
-  - name: Jennifer Hancock
-    role: Head of Production
-    description: >
-      Jennifer is an award winning producer who's 14 year career in the
-      entertainment industry began in Broadcast Television in North Carolina
-      after receiving a Bachelor of Fine Arts degree from the Savannah College
-      of Art and Design.  
+          Geof holds board positions and consults with several nonprofit organizations, helping them advance their missions through strategic marketing efforts. He speaks regularly on the topics of brand purpose and sustainability. Geof is a graduate of Georgetown University and received an MBA from the Wharton School of the University of Pennsylvania.
+      - name: Jennifer Hancock
+        role: Head of Production
+        description: >
+          Jennifer is an award winning producer who's 14 year career in the
+          entertainment industry began in Broadcast Television in North Carolina
+          after receiving a Bachelor of Fine Arts degree from the Savannah College
+          of Art and Design.  
 
 
-      In 2014 she moved to Los Angeles, opening the door to new opportunities as a Production Supervisor in advertising, Television and Feature Films. Her attention to detail, and knowledge of the business as a whole has won her contracts with global brands such as Eli Lilly, AB InBev, Aldi and Bank of America; and studios and networks such as Universal, Hulu, Netflix and ESPN.
-  - name: Brandon Nickens
-    role: Director of Casting and Talent
-    description: >
-      Brandon is seasoned expert with over 20 years of production and casting
-      experience within entertainment, sports, and media. Brandon is a
-      passionate storyteller with a unique ability to identify, coach, and
-      cultivate diverse talent for both traditional and digital media
-      formats.   
+          In 2014 she moved to Los Angeles, opening the door to new opportunities as a Production Supervisor in advertising, Television and Feature Films. Her attention to detail, and knowledge of the business as a whole has won her contracts with global brands such as Eli Lilly, AB InBev, Aldi and Bank of America; and studios and networks such as Universal, Hulu, Netflix and ESPN.
+      - name: Brandon Nickens
+        role: Director of Casting and Talent
+        description: >
+          Brandon is seasoned expert with over 20 years of production and casting
+          experience within entertainment, sports, and media. Brandon is a
+          passionate storyteller with a unique ability to identify, coach, and
+          cultivate diverse talent for both traditional and digital media
+          formats.   
 
 
-      Before joining the entertainment industry, Brandon pitched for a nationally ranked college baseball team and in 1993 was drafted by the Colorado Rockies. After a lot of thought, Brandon chose to stay in college over “going pro”...a decision that eventually led him to Reality Television at MTV, where he would develop and cultivate his skills in casting. Brandon would then go on to cast hit shows such as: The Apprentice, Deal or No Deal, The Bachelor, Extreme Weight Loss, and The Biggest Loser.   
+          Before joining the entertainment industry, Brandon pitched for a nationally ranked college baseball team and in 1993 was drafted by the Colorado Rockies. After a lot of thought, Brandon chose to stay in college over “going pro”...a decision that eventually led him to Reality Television at MTV, where he would develop and cultivate his skills in casting. Brandon would then go on to cast hit shows such as: The Apprentice, Deal or No Deal, The Bachelor, Extreme Weight Loss, and The Biggest Loser.   
 
 
-      Brandon's experience in the entertainment industry goes far beyond casting. He has been a Camera Assistant, Producer, Supervising Casting Director, Director of Talent and most recently VP of Casting at 3Ball Productions.
-  - name: Kendall Kiesewetter
-    role: Director of Post-Production
-    description: >
-      Kendall has spent the past 10 years working with ad agencies, start-ups,
-      and production companies, creating content for a variety of global brands
-      and networks. Her interest in filmmaking began at a young age, when she
-      asked her parents to buy her a camcorder so she could create what she saw
-      on TV. From that point on, she knew her calling was creating content. 
+          Brandon's experience in the entertainment industry goes far beyond casting. He has been a Camera Assistant, Producer, Supervising Casting Director, Director of Talent and most recently VP of Casting at 3Ball Productions.
+      - name: Kendall Kiesewetter
+        role: Director of Post-Production
+        description: >
+          Kendall has spent the past 10 years working with ad agencies, start-ups,
+          and production companies, creating content for a variety of global brands
+          and networks. Her interest in filmmaking began at a young age, when she
+          asked her parents to buy her a camcorder so she could create what she saw
+          on TV. From that point on, she knew her calling was creating content. 
 
 
-      Kendall was accepted into Savannah College of Art and Design in Savannah, Georgia, and pursued a BFA in Film and Television. She began her professional career at Buzzfeed Motion Pictures, where she produced, directed, and edited media featured on their network, and on many other social media platforms.  
+          Kendall was accepted into Savannah College of Art and Design in Savannah, Georgia, and pursued a BFA in Film and Television. She began her professional career at Buzzfeed Motion Pictures, where she produced, directed, and edited media featured on their network, and on many other social media platforms.  
 
 
-      Now as an independent Post-Production Supervisor she lives every day doing what she loves most, in hopes of inspiring others through her passion for the process.
+          Now as an independent Post-Production Supervisor she lives every day doing what she loves most, in hopes of inspiring others through her passion for the process.
+  - name: Teachers
+    members:
+      - name: Matt Berthot
+        role: Lead Teacher
+      - name: Matt Berthot
+        role: Lead Teacher
+      - name: Matt Berthot
+        role: Lead Teacher
+  - name: Student Advisors
+    members:
+      - name: Karis Hansen
+        role: Student Advisor
+      - name: murphey allen
+        role: Student Advisor
+      - name: Eva Lopez
+        role: Student Advisor

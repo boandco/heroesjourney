@@ -7,18 +7,18 @@ $color-light-blue: #E8F5FF;
 $color-muted: #C8CAE0;
 
 $colors: (
-  passion: #FFA9D2,
+  passion: #FBB9B5,
   vulnerability: #8388FC,
-  stories: #87F9EB,
-  perspective: #A0FFBB,
-  connection: #E9A7F9,
-  listen: #FBEC9D,
+  stories: #7EDCF9,
+  perspective: #91EDA0,
+  connection: #E8A7F8,
+  listen: #FFC450,
   grit: #5EBBFF,
-  intention: #FEBD9B,
-  courage: #E9A7F9,
+  intention: #FFA677,
+  courage: #B3B6FF,
   confidence: #FF9999,
-  gratitude: #A0FFBB,
-  celebration: #FFEC80
+  gratitude: #66D478,
+  celebration: #FFDF8C
 );
 @each $name, $color in $colors {
   .color-#{$name} {

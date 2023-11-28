@@ -9,23 +9,38 @@
       <p class="heading animate__fadeIn" id="{{ section.template }}-heading" data-scroll data-scroll-call="animate-in+{{ section.template }}-heading">{{ section.heading }}</p>
       <p class="description animate__fadeIn" id="{{ section.template }}-description" data-scroll data-scroll-call="animate-in+{{ section.template }}-description">{{ section.description }}</p>
     </div>
-    <ul class="accordion large">
-      {% for member in section.members %}
-        <li class="accordion__item" id="{{ member.name | slugify }}">
-          <button class="btn accordion_trigger grid" data-for="{{ member.name | slugify }}">
-            <span class="text-animate" id="{{ member.name | slugify }}-name" data-scroll data-scroll-call="text-animate+{{ member.name | slugify }}-name">{{ member.name }}</span>
-            <span class="text-animate role" id="{{ member.name | slugify }}-role" data-scroll data-scroll-call="text-animate+{{ member.name | slugify }}-role">{{ member.role }}</span>
-            <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.94214 0L9.94214 23" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-              <path d="M18.8781 15.1178L9.94221 24.06L1 15.1178" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-            </svg>              
-          </button>
-          <div class="panel">
-            <p>{{ member.description | markdownify }}</p>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for group in section.groups %}
+      <ul class="accordion large spaced">
+        {% for member in group.members %}
+          <li class="accordion__item{% unless member.description %} static{% endunless %}" id="{{ member.name | slugify }}">
+            {% if member.description %}
+              <button class="btn accordion_trigger grid" data-for="{{ member.name | slugify }}">
+            {% else %}
+              <div class="title grid{% unless member.description %} static{% endunless %}" data-for="{{ member.name | slugify }}">
+            {% endif %}
+
+              <span class="text-animate" id="{{ member.name | slugify }}-name" data-scroll data-scroll-call="text-animate+{{ member.name | slugify }}-name">{{ member.name }}</span>
+              <span class="text-animate role" id="{{ member.name | slugify }}-role" data-scroll data-scroll-call="text-animate+{{ member.name | slugify }}-role">{{ member.role }}</span>
+
+              {% if member.description %}
+                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.94214 0L9.94214 23" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M18.8781 15.1178L9.94221 24.06L1 15.1178" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+              {% endif %}
+
+            {% if member.description %}
+              </button>
+              <div class="panel">
+                <p>{{ member.description | markdownify }}</p>
+              </div>
+            {% else %}
+              </div>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
     <div id="blob_006" class="blob orange"></div>
   </div>
 </div>
