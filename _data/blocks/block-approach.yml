@@ -1,11 +1,19 @@
----
 template: block-approach
 section_title: our approach
-description: Heroes Journey offers educators an in-depth social emotional curriculum that leads students on a journey of self-discovery with an end goal of overcoming a big fear - public speaking.
+description: Heroes Journey offers educators an in-depth social emotional
+  curriculum that leads students on a journey of self-discovery with an end goal
+  of overcoming a big fear - public speaking.  
 slides:
-  - text: Students travel through 12 keystones, which are life tools that aim to ignite passion, voice, connection, fearlessness, inner leadership, knowledge of world issues, powerful presence and more.
-    image: https://placehold.co/600x600/F1F1F1/000
-  - text: As these keystones are experienced, the students build writing blocks for a presentation about something for which they take a stand. The keystones and blocks prepare students to tackle and support their fears.
-    image: https://placehold.co/600x600/F1F1F1/000
-  - text: At the end, students present their talks to the community. Educators and parents have the ability to submit their favorite talks to Heroes Journey for students to possibly be selected for Heroes Journey's annual Change Maker Summit.
-    image: https://placehold.co/600x600/F1F1F1/000
+  - text: Students travel through 12 keystones, which are life tools that aim to
+      ignite passion, voice, connection, fearlessness, inner leadership,
+      knowledge of world issues, powerful presence and more. 
+    image: assets/images/uploads/approach-01.jpg
+  - text: As these keystones are experienced, the students build writing blocks for
+      a presentation about something for which they  take a stand. The keystones
+      and blocks prepare students to tackle and support their fears.
+    image: assets/images/uploads/approach-02.jpg
+  - text: At the end, students present their talks to the community. Educators and
+      parents have the ability to submit their favorite talks to Heroes Journey
+      for students to possibly be selected for Heroes Journey’s annual Change
+      Maker Summit.
+    image: assets/images/uploads/approach-03.jpg
