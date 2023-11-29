@@ -13,6 +13,25 @@ logo_url: https://boandco.studio/images/logo.svg
 
 #Content
 collections:
+  - label: "Menu Navigation"
+    name: "menus"
+    editor:
+      preview: false
+    files:
+      - label: "Links"
+        name: "links"
+        file: "_data/linklists/main.yml"
+        fields:
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            label_singular: "Link"
+            collapsed: true
+            add_to_top: true
+            summary: '{{fields.title}}'
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Link", name: "url", widget: "string"}
   - label: "Homepage"
     name: "homepage_collection"
     editor:
@@ -23,7 +42,16 @@ collections:
         file: "_data/blocks/block-hero.yml"
         fields:
           - {label: "Template", name: "template", widget: "hidden"}
-          - {label: "Headline", name: "headline", widget: "text"}
+          - label: "Headline"
+            name: "headline"
+            widget: "list"
+            allow_add: true
+            min: 1
+            max: 3
+            add_to_top: false
+            summary: '{{fields.text}}'
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
       - label: "About us"
         name: "block-about-us"
         file: "_data/blocks/block-about-us.yml"
@@ -44,7 +72,8 @@ collections:
         file: "_data/blocks/block-video.yml"
         fields:
           - {label: "Template", name: "template", widget: "hidden"}
-          - {label: "Video Source", name: "video_source", widget: "string"}
+          - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+          - {label: "Video Source", name: "video_source", widget: "file"}
       - label: "Our approach"
         name: "block-approach"
         file: "_data/blocks/block-approach.yml"
@@ -62,14 +91,13 @@ collections:
             label_singular: "Slide"
             fields:
               - {label: "Text", name: "text", widget: "string"}
-              - {label: "Image", name: "image", choose_url: true, widget: "image"}
+              - {label: "Image", name: "image", widget: "image"}
       - label: "Stories"
         name: "block-stories"
         file: "_data/blocks/block-stories.yml"
         fields:
           - {label: "Template", name: "template", widget: "hidden"}
           - {label: "Section Title", name: "section_title", widget: "string"}
-          - {label: "Description", name: "description",  widget: "text", required: false}
           - label: "Featured stories"
             name: "selected_stories"
             hint: "To edit stories navigate to the [Stories](/admin/#/collections/stories) tab."
@@ -92,43 +120,13 @@ collections:
             label_singular: "Partner"
             allow_add: true
             collapsed: true
-            add_to_top: true
+            add_to_top: false
             summary: '{{fields.name}}'
             fields:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Description", name: "description", widget: "text"}
               - {label: "Image", name: "image", widget: "image"}
-              - {label: "Learn more link", name: "url", widget: "string"}
-      - label: "Values"
-        name: "block-values"
-        file: "_data/blocks/block-values.yml"
-        fields:
-          - {label: "Template", name: "template", widget: "hidden"}
-          - {label: "Section Title", name: "section_title", widget: "string"}
-          - label: "Values"
-            name: "values" 
-            widget: "list"
-            label_singular: "Value"
-            collapsed: true
-            add_to_top: true
-            summary: '{{fields.title.title}}'
-            field: {label: "Value", name: "title", widget: "string"}
-      - label: "Services"
-        name: "block-services"
-        file: "_data/blocks/block-services.yml"
-        fields:
-          - {label: "Template", name: "template", widget: "hidden"}
-          - {label: "Section Title", name: "section_title", widget: "string"}
-          - label: "Services"
-            name: "services"
-            widget: "list"
-            label_singular: "Service"
-            collapsed: true
-            add_to_top: true
-            summary: '{{fields.title}} - {{fields.description}}'
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Learn more link", name: "url", widget: "string", required: false}
       - label: "Team"
         name: "block-team"
         file: "_data/blocks/block-team.yml"
@@ -137,17 +135,50 @@ collections:
           - {label: "Section Title", name: "section_title", widget: "string"}
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
-          - label: "Team Members"
-            name: "members"
+          - label: "Team Groupings"
+            name: "groups"
             widget: "list"
-            label_singular: "Team member"
+            label_singular: "Group"
             collapsed: true
             add_to_top: true
-            summary: '{{fields.name}} - {{fields.role}}'
+            summary: '{{fields.name}}'
             fields:
               - {label: "Name", name: "name", widget: "string"}
-              - {label: "Role", name: "role", widget: "string"}
-              - {label: "Description", name: "description", widget: "markdown"}
+              - label: "Members"
+                name: "members"
+                widget: "list"
+                label_singular: "Member"
+                collapsed: true
+                add_to_top: true
+                summary: '{{fields.name}}'
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Role", name: "role", widget: "string"}
+                  - {label: "Description", name: "description", widget: "markdown", required: false}
+      - label: "Keystones"
+        name: "block-keystones"
+        file: "_data/blocks/block-keystones.yml"
+        fields:
+          - {label: "Template", name: "template", widget: "hidden"}
+          - {label: "Section Title", name: "section_title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Subtitle", name: "sticky_subtitle", widget: "string"}
+          - label: "Keystones"
+            name: "keystones" 
+            widget: "list"
+            label_singular: "Value"
+            collapsed: true
+            add_to_top: true
+            summary: '{{fields.field.title}}'
+            field: {label: "Keystone", name: "title", widget: "string"}
+      - label: "CM Summit"
+        name: "block-summit"
+        file: "_data/blocks/block-summit.yml"
+        fields:
+          - {label: "Template", name: "template", widget: "hidden"}
+          - {label: "Section Title", name: "section_title", widget: "string"}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Description", name: "description", widget: "markdown"}
       - label: "Quotes"
         name: "block-quote"
         file: "_data/blocks/block-quote.yml"
@@ -171,21 +202,21 @@ collections:
         fields:
           - {label: "Template", name: "template", widget: "hidden"}
           - {label: "Section Title", name: "section_title", widget: "string"}
-      - label: "Locations"
-        name: "block-locations"
-        file: "_data/blocks/block-locations.yml"
+      - label: "Topics"
+        name: "block-topics"
+        file: "_data/blocks/block-topics.yml"
         fields:
           - {label: "Template", name: "template", widget: "hidden"}
-          - label: "Locations"
-            name: "location_list"
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Topics"
+            name: "topics"
             widget: "list"
-            label_singular: "Location"
+            label_singular: "Topic"
             collapsed: true
             add_to_top: true
-            summary: '{{fields.airport_code}} - {{fields.name}}'
+            summary: '{{fields.title}}'
             fields:
-              - {label: "Airport Code", name: "airport_code", widget: "string"}
-              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
       - label: "Contact"
         name: "block-contact"
         file: "_data/blocks/block-contact.yml"
@@ -213,46 +244,26 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Links"
-        name: "links"
-        file: "_data/linklists/footer.yml"
+      - label: "Footer Content"
+        name: "content"
+        file: "_data/footer.yml"
         fields:
-          - label: "Links"
-            name: "links"
-            widget: "list"
-            label_singular: "Link"
-            collapsed: true
-            add_to_top: true
-            summary: '{{fields.title}}'
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Link", name: "url", widget: "string"}
-      - label: "Contact"
-        name: "contact"
-        file: "_data/footer/contact.yml"
-        fields:
-          - label: "Address Lines"
-            name: "address"
-            widget: "list"
-            label_singular: "Address line"
-            collapsed: true
-            add_to_top: true
-            summary: '{{fields.title.title}}'
-            field: {label: "Address line", name: "title", widget: "string"}
-          - {label: "Phone number", name: "phone_number", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-      - label: "Socials"
-        name: "socials"
-        file: "_data/footer/socials.yml"
-        fields:
-          - {label: "Show social media", name: "show_social_media", widget: "boolean", default: true}
-          - label: "Social Links"
-            name: "social_media"
-            widget: "list"
-            label_singular: "Link"
-            collapsed: true
-            add_to_top: true
-            summary: '{{fields.social_network}}'
+              - label: "Address"
+                name: "address"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+              - {label: "Phone number", "name": "phone_number", widget: "string"}
+              - {label: "Email", "name": "email", widget: "string"}
+          - label: "Social Media"
+            name: "socials"
+            widget: "object"
             fields:
-              - {label: "Link", name: "url", widget: "string"}
-              - {label: "Name", name: "social_network", widget: "string"}
+              - {label: "Show social icons", name: "show_social_media", widget: "boolean"}
+
+                
+              

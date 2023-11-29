@@ -5,6 +5,9 @@
     grid-template-columns: 40% auto;
     position: relative;
     width: 100vw;
+    @media screen and (max-width: $break-mobile) {
+      left: -$gutter / 2;
+    }
   }
 
   .sticky-overlay {
@@ -40,6 +43,9 @@
         margin: 0;
         position: relative;
         top: -2.5em;
+        @media screen and (max-width: $break-mobile) {
+          top: -0.8em;
+        }
       }
     }
 

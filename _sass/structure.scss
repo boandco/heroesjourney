@@ -31,9 +31,7 @@ $break-mobile: '1024px';
 
 [data-scroll-container] {
   perspective: 1px;
-  @media screen and (max-width: $break-mobile) {
-    overflow: hidden;
-  }
+  contain: paint;
 }
 [data-scroll-section] {
   perspective: 1px;
@@ -65,7 +63,8 @@ html.has-scroll-smooth {
 	transform: translateZ(0);
 }
 body {
-  height: 100vh;
+  height: auto;
+  width: 100%;
   margin: 0;
   padding: 0;
   background: $color-white;

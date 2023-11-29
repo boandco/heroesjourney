@@ -69,9 +69,15 @@ a.btn,
     align-items: center;
     gap: 1em;
     font-size: 1.2em;
-
     span.bold {
       font-weight: 500;
+    }
+
+    @media screen and (max-width: $break-mobile) {
+      .btn {
+        flex-shrink: 0;
+      }
+      text-align: left;
     }
   }
 }

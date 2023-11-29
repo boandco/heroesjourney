@@ -1,6 +1,7 @@
 .approach {
   &__slides {
     width: 100%;
+    height: auto;
     margin: 4em 0 0;
     display: grid;
     grid-template-columns: auto 25vw 25vw;
@@ -8,9 +9,27 @@
     gap: 2em;
     align-items: flex-end;
 
+    @media screen and (max-width: $break-mobile) {
+      grid-template-columns: 90% auto;
+      grid-template-rows: auto;
+      gap: 1em;
+      width: 100vw;
+      position: relative;
+      left: -2em;
+      padding: 2em;
+      overflow: hidden;
+    }
+
     &__text {
       grid-row: 1;
       grid-column: 2/4;
+
+      @media screen and (max-width: $break-mobile) {
+        grid-row: 2;
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column-reverse;
+      }
 
       .slide__text {
         font-size: 1.4em;
@@ -68,6 +87,17 @@
       height: 100%;
       grid-row: 2;
       position: relative;
+
+      @media screen and (max-width: $break-mobile) {
+        grid-row: 1;
+        &:not(.active) {
+          height: 100%;
+          width: auto;
+          aspect-ratio: 1/1;
+          transform: scale(0.8);
+          transform-origin: bottom left;
+        }
+      }
       
       img {
         width: 100%;
@@ -103,6 +133,9 @@
       &.active {
         grid-row: 1/3;
         grid-column: 1;
+        @media screen and (max-width: $break-mobile) {
+          grid-row: 1;
+        }
       }
     }
   }

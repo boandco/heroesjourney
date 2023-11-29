@@ -1,9 +1,13 @@
 .blob {
   position: absolute;
-  // filter: blur(80px);
+  filter: blur(80px);
   opacity: 0.75;
   z-index: -1;
   pointer-events: none;
+
+  @media screen and (max-width: $break-mobile) {
+    filter: blur(40px);
+  }
 
   &#blob_001 {
     top: 2vh;
@@ -58,6 +62,9 @@
     width: 50vw;
     border-radius: 100%;
     transform: rotate(135deg);
+    @media screen and (max-width: $break-mobile) {
+      left: -40vw;
+    }
   }
 
   &.blue {
