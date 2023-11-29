@@ -171,6 +171,7 @@ collections:
             add_to_top: true
             summary: '{{fields.title.title}}'
             field: {label: "Keystone", name: "title", widget: "string"}
+          - {label: "Keystone Journey Map", name: "journey_map_source", widget: "file"}
       - label: "CM Summit"
         name: "block-summit"
         file: "_data/blocks/block-summit.yml"
