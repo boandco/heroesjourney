@@ -1,7 +1,6 @@
 backend:
-  name: test-repo # Use test-repo for local, git-gateway for production
+  name: git-gateway # Use test-repo for local, git-gateway for production
   branch: main # Branch to update (optional; defaults to master)
-  local_backend: true
 
 media_folder: "assets/images/uploads"
 public_folder: "assets/images/uploads"
@@ -45,9 +44,8 @@ collections:
           - label: "Headline"
             name: "headline"
             widget: "list"
-            allow_add: true
-            min: 1
             max: 3
+            min: 1
             add_to_top: false
             summary: '{{fields.text}}'
             fields:
@@ -84,14 +82,16 @@ collections:
           - label: "Slides"
             name: "slides"
             widget: "list"
-            min: 1
             max: 3
+            min: 1
             allow_add: true
             add_to_top: true
+            collapsed: false
             label_singular: "Slide"
+            summary: '{{fields.text}}'
             fields:
-              - {label: "Text", name: "text", widget: "string"}
               - {label: "Image", name: "image", widget: "image"}
+              - {label: "Text", name: "text", widget: "string"}
       - label: "Stories"
         name: "block-stories"
         file: "_data/blocks/block-stories.yml"
@@ -150,7 +150,7 @@ collections:
                 label_singular: "Member"
                 collapsed: true
                 add_to_top: true
-                summary: '{{fields.name}}'
+                summary: '{{fields.name}} - {{fields.role}}'
                 fields:
                   - {label: "Name", name: "name", widget: "string"}
                   - {label: "Role", name: "role", widget: "string"}
@@ -169,7 +169,7 @@ collections:
             label_singular: "Value"
             collapsed: true
             add_to_top: true
-            summary: '{{fields.field.title}}'
+            summary: '{{fields.title.title}}'
             field: {label: "Keystone", name: "title", widget: "string"}
       - label: "CM Summit"
         name: "block-summit"
@@ -196,12 +196,6 @@ collections:
             fields:
               - {label: "Quote", name: "quote", widget: "text"}
               - {label: "Author", name: "author", widget: "string"}
-      - label: "Divider"
-        name: "block-divider"
-        file: "_data/blocks/block-divider.yml"
-        fields:
-          - {label: "Template", name: "template", widget: "hidden"}
-          - {label: "Section Title", name: "section_title", widget: "string"}
       - label: "Topics"
         name: "block-topics"
         file: "_data/blocks/block-topics.yml"
