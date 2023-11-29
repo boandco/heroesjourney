@@ -1,7 +1,9 @@
----
 template: block-keystones
 section_title: What we do
-description: Heroes Journey activates future leaders & change makers by creating a platform for young leaders to connect and present ideas that inspire, empower and enlighten the world, on a global stage.
+description: >
+  Heroes Journey activates future leaders & change makers by creating a platform
+  for young leaders to connect and present ideas that inspire, empower and
+  enlighten the world, on a global stage.
 sticky_subtitle: keystones
 keystones:
   - title: passion
