@@ -5,102 +5,94 @@ description: are passionate people dedicated to making empowerment content.
 groups:
   - name: Team
     members:
-      - name: Eric Alan Donaldson
+      - name: Tara Thomas
         role: Co-founder
-        description: >
-          Eric is a veteran content creator and visionary. In his career that spans
-          over 20 years in media production, he has developed a keen ability to seek
-          out emerging markets and new technologies. His sense of “what's next” has
-          won him advertising and marketing campaigns with global brands such as
-          Lexus, Corona, Nike and Red Bull, organizations such as the NBA and NFL,
-          and networks such as ESPN, TLC, Disney and Hallmark.
-
-
-          During his tenure, Eric has created a collective network of media professionals who create original, socially conscious content, which elevates brands and cultivates good humans worldwide.
+        description: Tara is a longtime public and private school educator who teaches
+          and leads through an approach that combines both intuition and
+          researched best practices. Mrs. Thomas currently presents workshops in
+          literacy instruction through Momentum in Teaching, a professional
+          development company she co-founded in 2010.
+      - name: Morgan Fone
+        role: Co-founder
+        description: Morgan began exploring careers in education when she realized the
+          lack of passion in our future workforce and fell in love with the idea
+          of preparing our children with social emotional skills. Morgan has
+          trained and led international Heroes Journey workshops with  teachers
+          in Malaysia and Thailand.  She continues to operate as the backbone to
+          the international activities and expansion of the curriculum.
       - name: Kristin Prouty
-        role: Co-founder
-        description: >
-          Kristin has spent her career establishing herself as a best-in-class
-          within the entertainment industry. Her strengths lie in connecting,
-          producing, vision and execution. Kristin has been instrumental in
-          launching some of the most notables brands in show business: Survivor,
-          Apprentice, Biggest Loser, Jimmy Kimmel Live as she's helped cast,
-          produce, celebrity book for over 30+ popular shows. Kristin launched the
-          Entertainment Relations division for WWE and retained a SVP position. She
-          helped jumpstart careers for people like the Bella Twins, Logan Paul and
-          facilitated many celebrity storylines with people like Hugh Jackman, Kevin
-          Hart, Floyd Mayweather, Johnny Knoxville and others. She booked WWE talent
-          on most notable Broadcast TV shows; she spearheaded partnerships with
-          major social media influencers (including Dude Perfect, Mr. Beast, Lilly
-          Singh, and many more), WWE talent at red carpet events, major award shows,
-          and more.
-
-
-          Kristin also founded the empowerment studio known as JOURNEY 8 and 501c3 [Heroes Journey](http://heroesjourney.com).
-      - name: Geof Rochester
-        role: Marketing
-        description: >
-          A recognized thought-leader across corporate sustainability and
-          responsibility, NGOs, philanthropy, and social entrepreneurship. He brings
-          distinctive and dynamic experience with the world’s leading conservation
-          NGO, media companies, and consumer goods brands.
-
-
-          Most recently, Geof served in global roles as Managing Director and Chief Marketing Officer of The Nature Conservancy, where he was responsible for steering the organization's marketing, membership and visibility strategies. Prior, Geof held the positions of Executive Vice President for Marketing at World Wrestling Entertainment and Senior Vice President for Marketing at Showtime Networks. Earlier in his career, Geof served in senior marketing positions with Comcast Communications, Radisson Hotels International and P&G.
-
-
-          Geof holds board positions and consults with several nonprofit organizations, helping them advance their missions through strategic marketing efforts. He speaks regularly on the topics of brand purpose and sustainability. Geof is a graduate of Georgetown University and received an MBA from the Wharton School of the University of Pennsylvania.
-      - name: Jennifer Hancock
-        role: Head of Production
-        description: >
-          Jennifer is an award winning producer who's 14 year career in the
-          entertainment industry began in Broadcast Television in North Carolina
-          after receiving a Bachelor of Fine Arts degree from the Savannah College
-          of Art and Design.  
-
-
-          In 2014 she moved to Los Angeles, opening the door to new opportunities as a Production Supervisor in advertising, Television and Feature Films. Her attention to detail, and knowledge of the business as a whole has won her contracts with global brands such as Eli Lilly, AB InBev, Aldi and Bank of America; and studios and networks such as Universal, Hulu, Netflix and ESPN.
-      - name: Brandon Nickens
-        role: Director of Casting and Talent
-        description: >
-          Brandon is seasoned expert with over 20 years of production and casting
-          experience within entertainment, sports, and media. Brandon is a
-          passionate storyteller with a unique ability to identify, coach, and
-          cultivate diverse talent for both traditional and digital media
-          formats.   
-
-
-          Before joining the entertainment industry, Brandon pitched for a nationally ranked college baseball team and in 1993 was drafted by the Colorado Rockies. After a lot of thought, Brandon chose to stay in college over “going pro”...a decision that eventually led him to Reality Television at MTV, where he would develop and cultivate his skills in casting. Brandon would then go on to cast hit shows such as: The Apprentice, Deal or No Deal, The Bachelor, Extreme Weight Loss, and The Biggest Loser.   
-
-
-          Brandon's experience in the entertainment industry goes far beyond casting. He has been a Camera Assistant, Producer, Supervising Casting Director, Director of Talent and most recently VP of Casting at 3Ball Productions.
-      - name: Kendall Kiesewetter
-        role: Director of Post-Production
-        description: >
-          Kendall has spent the past 10 years working with ad agencies, start-ups,
-          and production companies, creating content for a variety of global brands
-          and networks. Her interest in filmmaking began at a young age, when she
-          asked her parents to buy her a camcorder so she could create what she saw
-          on TV. From that point on, she knew her calling was creating content. 
-
-
-          Kendall was accepted into Savannah College of Art and Design in Savannah, Georgia, and pursued a BFA in Film and Television. She began her professional career at Buzzfeed Motion Pictures, where she produced, directed, and edited media featured on their network, and on many other social media platforms.  
-
-
-          Now as an independent Post-Production Supervisor she lives every day doing what she loves most, in hopes of inspiring others through her passion for the process.
+        role: Co-Founder
+        description: "Kristin has spent her career establishing herself as a
+          best-in-class within the entertainment industry. Kristin has been
+          instrumental in launching some of the most notables brands in show
+          business: Survivor, Apprentice, Biggest Loser, Jimmy Kimmel Live as
+          she’s helped cast, produce, celebrity book for over 30+ popular shows.
+          Kristin launched the Entertainment Relations division for WWE and
+          retains a SVP position."
+      - name: Charley Allen
+        role: Head of Mindfulness
+        description: Charley received his Masters of Clinical Psychology from Antioch
+          University and is a California Licensed Family Therapist (LMFT).
+          Charley teaches mindfulness to both adults and children in group
+          settings such as schools, corporate workplaces, and medical treatment
+          facilities. Charley has received extensive training in mindfulness
+          practice and its application in psychotherapy.
+      - name: Eric Donaldson
+        role: Head of Content
+        description: Eric's career spans over 20 years in media production. His sense of
+          “what’s next” has won him advertising campaigns with global brands
+          such as Lexus, Corona, Nike and Red Bull, NBA and NFL, and networks
+          such as ESPN, TLC, Disney and Hallmark. During his tenure, Eric has
+          created a collective network of media professionals who create
+          original, socially conscious content, which elevates brands and
+          cultivates good humans worldwide.
+      - name: Ally Figg
+        role: Curriculum Advisor
+        description: Alison is an Australian physiotherapist. She worked for many years
+          developing novel education curriculums for patients suffering with
+          chronic pain conditions. Alison is a curriculum advisor for Heroes
+          Journey
+      - name: Ali Marshall
+        role: Curriculum Advisor
+        description: Ali Marshall is an educator, innovator, and life-long learner who
+          is excited to be working with Heroes Journey. Since graduating from
+          Ohio University in 2020 with a single subject language arts education
+          credential, Ali has been teaching in the Los Angeles area for the past
+          three years. Ali believes in a holistic teaching approach and prides
+          herself on teaching students how to make connections to real world
+          concepts within literature and their own lives. In joining the Heroes
+          Journey team, Ali is looking forward to sharing with other teachers
+          the power of this curriculum and its benefit to students' learning
   - name: Teachers
     members:
       - name: Matt Berthot
         role: Lead Teacher
-      - name: Matt Berthot
+      - name: Rae Toledo
         role: Lead Teacher
-      - name: Matt Berthot
+      - name: Becca Rasko
+        role: Lead Teacher
+      - name: Han Yee
         role: Lead Teacher
   - name: Student Advisors
     members:
       - name: Karis Hansen
-        role: Student Advisor
-      - name: murphey allen
-        role: Student Advisor
+        role: Student
+        description: Karis Hansen is in 8th grade at St. Mark. She has run through the
+          Heroes Journey curriculum two times and has given various notes,
+          exercises and videos to the curriculum since 2nd grade. Her two HJ
+          talks were about Overcoming Shyness and Taking Care of the Homeless.
+          Karis launched the heroes challenge in 2019 challenging teachers to
+          challenge their students to do good deeds.
+      - name: Murphey Allen
+        role: Student
+        description: Murphey is a proud member of the HJ team. He has been involved with
+          his own talks in elementary school and now in middle school. He was
+          inspired by hearing from his classmates things he would of never
+          known. He has written talks to inspire about the inequality in sports
+          in the US. watching the best athletes he played with not be able to
+          continue for lack of funds for club fees.
       - name: Eva Lopez
-        role: Student Advisor
+        role: Student
+        description: Eva is senior in Highschool and has been involved in Heroes Journey
+          since 2020 advising on relevant content and current events pertaining
+          to the curriculum and social media, she has found inspiration
