@@ -1,4 +1,3 @@
----
 template: block-video
-thumbnail: https://placehold.co/1440x600
+thumbnail: assets/images/uploads/video-thumbnail.jpg
 video_source: https://vimeo.com/379082677?share=copy
