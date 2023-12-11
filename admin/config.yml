@@ -219,7 +219,7 @@ collections:
           - {label: "Template", name: "template", widget: "hidden"}
           - {label: "Section Title", name: "section_title", widget: "string"}
           - {label: "Heading", name: "heading", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Description", name: "description", widget: "text", required: false}
           - {label: "Email", name: "email", widget: "string"}
   - label: "Stories"
     name: "stories"
