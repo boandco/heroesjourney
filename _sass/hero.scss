@@ -19,13 +19,15 @@
 
   .hero-logo {
     position: absolute;
-    top: 5vh;
-    left: 12vw;
+    top: 55vh;
+    left: 30vw;
     @media screen and (max-width: $break-mobile) {
-      top: 10vh;
-      left: -10vw;
+      top: 20vh;
+      left: 50vw;
     }
-    svg {
+    svg,
+    img {
+      width: 50vw;
       min-width: 600px;
       height: auto;
       animation: 25s spinLogo infinite linear;
