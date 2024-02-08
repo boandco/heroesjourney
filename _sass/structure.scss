@@ -371,7 +371,8 @@ a {
     transition: 0.8s cubic-bezier(0.85, 0, 0.15, 1);
     transform: translateY(0);
     opacity: 1;
-    svg {
+    svg,
+    img {
       height: 10vh;
       width: auto;
       animation: loading 5s linear infinite;
