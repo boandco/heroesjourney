@@ -1,5 +1,5 @@
 backend:
-  name: test-repo # Use test-repo for local, git-gateway for production
+  name: git-gateway # Use test-repo for local, git-gateway for production
   branch: main # Branch to update (optional; defaults to master)
 
 media_folder: "assets/images/uploads"
