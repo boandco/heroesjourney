@@ -7,16 +7,14 @@
     {% include loading.html %}
     <div id="cursor" class="cursor mobile-hide"></div>
     <div class="video_modal">
-      <button class="btn btn__circle btn__scale btn__light video_modal_trigger" id="video_close">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L17.2635 17.2635" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-          <path d="M17.2634 1L0.999973 17.2635" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-        </svg>          
-        <span class="visually-hidden">Close modal</span>
-      </button>
+      {% include assets/close_modal_button.html trigger='video_modal_trigger' %}
       <video id="video_modal_player" controls>
         <source id="video_modal_source">
       </video>
+    </div>
+    <div class="vimeo_modal">
+      {% include assets/close_modal_button.html trigger='vimeo_modal_trigger' %}
+      <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
     {% include navigation.html %}
     <div class="wrapper" data-scroll-container>

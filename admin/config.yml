@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway # Use test-repo for local, git-gateway for production
+  name: test-repo # Use test-repo for local, git-gateway for production
   branch: main # Branch to update (optional; defaults to master)
 
 media_folder: "assets/images/uploads"
@@ -65,13 +65,26 @@ collections:
             summary: '{{fields.text}}'
             fields:
               - {label: "Text", name: "text", widget: "string"}
+          - label: "Contact block"
+            name: "contact_block"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Button"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - {label: "Button Text", name: "text", widget: "string"}
+                  - {label: "Button Link", name: "url", widget: "string"}
       - label: "Video"
         name: "block-video"
         file: "_data/blocks/block-video.yml"
         fields:
           - {label: "Template", name: "template", widget: "hidden"}
           - {label: "Thumbnail", name: "thumbnail", widget: "image"}
-          - {label: "Video Source", name: "video_source", widget: "file"}
+          - {label: "Vimeo Source", name: "vimeo_source", widget: "string"}
+          - {label: "Vimeo Title", name: "vimeo_title", widget: "string"}
       - label: "Our approach"
         name: "block-approach"
         file: "_data/blocks/block-approach.yml"

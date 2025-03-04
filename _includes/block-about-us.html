@@ -3,7 +3,7 @@
   <div class="section__title">
     <h2 class="letter-animate" id="{{ section.template }}-h2" data-scroll data-scroll-call="text-animate+{{ section.template }}-h2">{{ section.section_title }}</h2>
   </div>
-  <div class="section__content offset__left">
+  <div class="section__content flex row">
     <div class="section__content__container">
       <p class="heading animate__fadeIn" id="{{ section.template }}-heading" data-scroll data-scroll-call="animate-in+{{ section.template }}-heading">{{ section.heading | replace: '\n', '<br>' }}</p>
       {% if section.descriptions %}
@@ -11,6 +11,11 @@
           <p class="description bullet">{{ description.text }}</p>
         {% endfor %}
       {% endif %}
+    </div>
+    <div class="section__content__container">
+      <p class="heading s-2 animate__fadeIn" id="{{ section.template }}-contact-heading" data-scroll data-scroll-call="animate-in+{{ section.template }}-contact-heading">{{ section.contact_block.heading }}</p>
+      <p class="description bullet">{{ section.contact_block.description }}</p>
+      <a class="btn btn__secondary" style="margin-top: 2em;" href="{{ section.contact_block.cta.url }}" target="_blank">{{ section.contact_block.cta.text }}</a>
     </div>
   </div>
 </div>

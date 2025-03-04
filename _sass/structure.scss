@@ -143,6 +143,34 @@ a {
   &__content {
     display: flex;
     flex-direction: column;
+    &.row {
+      flex-direction: row;
+      gap: 10em;
+      .section__content__container:first-of-type {
+        width: 60%;
+      }
+      .section__content__container:last-of-type {
+        width: 40%;
+        margin-top: 3em;
+      }
+      @media screen and (max-width: $break-mobile) {
+        flex-direction: column;
+        gap: 4em;
+        .section__content__container:first-of-type {
+          width: 100%;
+        }
+        .section__content__container:last-of-type {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+    }
+    &.a-center {
+      align-items: center;
+    }
+    &.a-bottom {
+      align-items: flex-end;
+    }
     &.offset {
       &__left {
         align-items: flex-end;

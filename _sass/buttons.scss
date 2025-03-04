@@ -7,6 +7,19 @@ a.btn,
   font-family: $font-family;
   cursor: pointer;
   transition: 0.4s ease;
+  text-decoration: none;
+  display: inline-block;
+  
+  &__secondary {
+    padding: 1em 4em;
+    border: 1px solid $color-black;
+    font-weight: 500;
+    border-radius: 11px;
+    &:hover {
+      background: $color-black;
+      color: $color-white;
+    }
+  }
 
   &__dark {
     background: $color-black;
