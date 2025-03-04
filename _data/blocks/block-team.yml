@@ -6,12 +6,21 @@ groups:
   - name: Team
     members:
       - name: Tara Thomas
-        role: Co-founder
+        role: Founder
         description: Tara is a longtime public and private school educator who teaches
           and leads through an approach that combines both intuition and
           researched best practices. Mrs. Thomas currently presents workshops in
           literacy instruction through Momentum in Teaching, a professional
           development company she co-founded in 2010.
+      - name: Kristin Prouty
+        role: Founder
+        description: "Kristin has spent her career establishing herself as a
+          best-in-class within the entertainment industry. Kristin has been
+          instrumental in launching some of the most notables brands in show
+          business: Survivor, Apprentice, Biggest Loser, Jimmy Kimmel Live as
+          she’s helped cast, produce, celebrity book for over 30+ popular shows.
+          Kristin launched the Entertainment Relations division for WWE and
+          retains a SVP position."
       - name: Morgan Fone
         role: Co-founder
         description: Morgan began exploring careers in education when she realized the
@@ -20,15 +29,6 @@ groups:
           trained and led international Heroes Journey workshops with  teachers
           in Malaysia and Thailand.  She continues to operate as the backbone to
           the international activities and expansion of the curriculum.
-      - name: Kristin Prouty
-        role: Co-Founder
-        description: "Kristin has spent her career establishing herself as a
-          best-in-class within the entertainment industry. Kristin has been
-          instrumental in launching some of the most notables brands in show
-          business: Survivor, Apprentice, Biggest Loser, Jimmy Kimmel Live as
-          she’s helped cast, produce, celebrity book for over 30+ popular shows.
-          Kristin launched the Entertainment Relations division for WWE and
-          retains a SVP position."
       - name: Charley Allen
         role: Head of Mindfulness
         description: Charley received his Masters of Clinical Psychology from Antioch
@@ -63,6 +63,42 @@ groups:
           concepts within literature and their own lives. In joining the Heroes
           Journey team, Ali is looking forward to sharing with other teachers
           the power of this curriculum and its benefit to students' learning
+      - name: Kate Goldberg
+        role: Social Media Manager / Curriculum Advisor
+        description: With a strong background in both creative production and business,
+          Kate is an NYU Tisch School of the Arts graduate with a minor in the
+          Business of Entertainment, blending artistic vision with business
+          acumen. She has worked with top-tier production companies, overseeing
+          social media, editing, and content development. Currently, Kate works
+          at a leading production company where she manages content creation and
+          execution. She is passionate about leveraging her expertise to support
+          educational initiatives, including contributing to a transformative
+          curriculum.
+      - name: Megan Moureaux
+        role: Marketing and New Media Manager
+        description: "With more than 10+ years of experience, Megan’s career has led her
+          to work across some of the largest entertainment and sporting worlds
+          including: ESPN, NBA, NFL, WWE, NBC, and many other shows and events.
+          She’s worked hand-in-hand producing content with high profile
+          athletes, musicians, celebrities, and brands. Megan is a “Jill of all
+          Trades” and brings her expansive skillset and knowledge to Heroes
+          Journey as one of our Brand Marketing and Social Media Managers."
+      - name: Caycee Allen
+        role: Global Growth Strategy Advisor
+        description: Caycee Allen, M.Ed. was raised in a small bayou town sixty miles
+          south of New Orleans by educators. As long as she can remember she
+          knew her purpose was to connect, educate and serve others. As an
+          Elementary Education teacher, she returned to college to get her
+          Masters of Education in Counseling. She was trained at the University
+          of New Orleans with a certification in Play Therapy. Caycee has spent
+          many years dedicated to serving our youth and in 2018 began a new
+          venture of connecting, serving and educating corporate business
+          leaders on leadership, personal development and execution. In 2025,
+          Caycee started in professional learning and coaching for early
+          intervention educators. Caycee intends to continue a life long
+          adventure of living out her purpose by connecting and helping as many
+          beings as possible. She looks forward to connecting with you on this
+          journey.
   - name: Teachers
     members:
       - name: Matt Berthot
