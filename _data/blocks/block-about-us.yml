@@ -1,8 +1,11 @@
 template: block-about-us
 section_title: About us
-heading: heroes journey is...
+heading: Heroes Journey equips students with social-emotional tools that inspire
+  growth, empower self-discovery, and strengthen the core of who they are
 descriptions:
-  - text: A series of Social Emotional tools offered to students, which aim to connect, inspire, empower and promote self-discovery and strengthening of the core.
+  - text: A series of Social Emotional tools offered to students, which aim to
+      connect, inspire, empower and promote self-discovery and strengthening of
+      the core.
 contact_block:
   heading: get in touch
   description: Contact Heroes Journey to host a social emotional school rally.
