@@ -37,15 +37,6 @@ groups:
           settings such as schools, corporate workplaces, and medical treatment
           facilities. Charley has received extensive training in mindfulness
           practice and its application in psychotherapy.
-      - name: Eric Donaldson
-        role: Head of Content
-        description: Eric's career spans over 20 years in media production. His sense of
-          “what’s next” has won him advertising campaigns with global brands
-          such as Lexus, Corona, Nike and Red Bull, NBA and NFL, and networks
-          such as ESPN, TLC, Disney and Hallmark. During his tenure, Eric has
-          created a collective network of media professionals who create
-          original, socially conscious content, which elevates brands and
-          cultivates good humans worldwide.
       - name: Ally Figg
         role: Curriculum Advisor
         description: Alison is an Australian physiotherapist. She worked for many years
@@ -111,14 +102,22 @@ groups:
         role: Lead Teacher
   - name: Student Advisors
     members:
+      - name: "Julia Lee "
+        role: "Social Media Coordinator "
+        description: Karis Hansen is a sophomore at Pacifica Christian. She has run
+          through the Heroes Journey curriculum two times and has given various
+          notes, exercises and videos to the curriculum since 2nd grade. Her two
+          HJ talks were about Overcoming Shyness and Taking Care of the
+          Homeless. Karis launched the heroes challenge in 2019 challenging
+          teachers to challenge their students to do good deeds.
       - name: Karis Hansen
         role: Student
-        description: Karis Hansen is in 8th grade at St. Mark. She has run through the
-          Heroes Journey curriculum two times and has given various notes,
-          exercises and videos to the curriculum since 2nd grade. Her two HJ
-          talks were about Overcoming Shyness and Taking Care of the Homeless.
-          Karis launched the heroes challenge in 2019 challenging teachers to
-          challenge their students to do good deeds.
+        description: Murphey is a proud member of the HJ team and attends Loyola. He has
+          been involved with his own talks in elementary school and now in
+          middle school. He was inspired by hearing from his classmates things
+          he would of never known. He has written talks to inspire about the
+          inequality in sports in the US. watching the best athletes he played
+          with not be able to continue for lack of funds for club fees.
       - name: Murphey Allen
         role: Student
         description: Murphey is a proud member of the HJ team. He has been involved with
