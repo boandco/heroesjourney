@@ -1,11 +1,11 @@
 template: block-about-us
 section_title: About us
-heading: Heroes Journey equips students with social-emotional tools that empower
-  self-discovery, and strengthen the core of who they are
+heading: "Heroes Journey equips students with effective social-emotional and
+  mental health tools "
 descriptions: []
 contact_block:
   heading: get in touch
-  description: Contact Heroes Journey to host a social emotional school rally.
+  description: "Contact Heroes Journey to discuss partnering "
   cta:
     text: Contact
     url: mailto:morgan@heroesjourney.com
