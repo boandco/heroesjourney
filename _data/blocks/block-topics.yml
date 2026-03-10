@@ -1,8 +1,9 @@
----
 template: block-topics
-description: Heroes Journey has a large roster of change makers - experts, speakers, storytellers, celebrities, athletes, and more… who can speak at schools in any area of the country about relevant issues students face.
+description: "Heroes Journey has a roster of change makers who speak at schools
+  about relevant social issues "
 topics:
-  - title: drug awareness
+  - title: "digital well being "
+  - title: "drug awareness and prevention "
   - title: bullying
   - title: self-identification
   - title: motivation
