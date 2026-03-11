@@ -1,5 +1,6 @@
 template: block-hero
 headline:
-  - text: "Join Heroes Journey  "
-  - text: "Social Emotional and Mental Health "
-  - text: "Movement "
+  - text: "Join Heroes Journey"
+  - text: "Social Emotional"
+  - text: "and Mental Health"
+  - text: "Movement"
